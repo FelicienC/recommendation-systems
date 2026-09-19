@@ -1,0 +1,80 @@
+[project]
+name = "recommendationsystems"
+version = "0.1.0"
+description = "A modern Python starter project"
+readme = "README.md"
+authors = [
+    { name = "FelicienC", email = "cantalloubef@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "codespell>=2.4.1",
+    "conventional-pre-commit>=4.2.0",
+    "deptry>=0.23.0",
+    "mkdocs>=1.6.1",
+    "prek>=0.2.0",
+    "pytest>=8.4.1",
+    "pytest-cov>=6.2.1",
+    "ruff>=0.12.10",
+    "ty>=0.0.1a20",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.8,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.ruff]
+line-length = 88
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "COM812",
+    "CPY001",
+    "D206",
+    "D203",
+    "D300",
+    "D213",
+    "E111",
+    "E114",
+    "E117",
+    "E501",
+    "ISC001",
+    "Q000",
+    "Q001",
+    "Q002",
+    "Q003",
+    "Q004",
+    "W191",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["D104"]
+"tests/**/*.py" = ["S101"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.pytest.ini_options]
+addopts = "-ra --cov=recommendationsystems --cov-report=term-missing"
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+
+[tool.ty.environment]
+root = ["src"]
+
+[tool.codespell]
+check-hidden = true
+skip = "./.git,./.venv,./uv.lock"

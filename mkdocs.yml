@@ -1,0 +1,10 @@
+site_name: PythonStarter
+site_description: A modern Python package starter
+
+docs_dir: docs
+
+theme:
+  name: readthedocs
+
+nav:
+  - Home: index.md
