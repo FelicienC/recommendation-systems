@@ -7,13 +7,17 @@ authors = [
     { name = "FelicienC", email = "cantalloubef@gmail.com" }
 ]
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.0.0",
+]
 
 [dependency-groups]
 dev = [
     "codespell>=2.4.1",
     "conventional-pre-commit>=4.2.0",
     "deptry>=0.23.0",
+    "ipykernel>=7.3.0",
     "mkdocs>=1.6.1",
     "prek>=0.2.0",
     "pytest>=8.4.1",
@@ -55,10 +59,14 @@ ignore = [
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = ["D104"]
 "tests/**/*.py" = ["S101"]
+"src/recommendationsystems/01_bandits/simulated_user.py" = ["S311"]
 
 [tool.ruff.format]
 quote-style = "double"
 indent-style = "space"
+
+[tool.deptry]
+known_first_party = ["simulated_user"]
 
 [tool.pytest.ini_options]
 addopts = "-ra --cov=recommendationsystems --cov-report=term-missing"
@@ -77,4 +85,5 @@ root = ["src"]
 
 [tool.codespell]
 check-hidden = true
+ignore-regex = "[A-Za-z0-9+/=]{100,}"
 skip = "./.git,./.venv,./uv.lock"
