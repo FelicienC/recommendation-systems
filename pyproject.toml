@@ -85,5 +85,5 @@ root = ["src"]
 
 [tool.codespell]
 check-hidden = true
-ignore-regex = "[A-Za-z0-9+/=]{100,}"
+ignore-regex = "\\\"image/png\\\": \\\"[A-Za-z0-9+/=]+\\\""
 skip = "./.git,./.venv,./uv.lock"
