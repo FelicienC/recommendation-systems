@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
+  <title id="title">The contextual bandit feedback loop</title>
+  <desc id="desc">A simulated user's context goes to the recommender, which selects a channel. The user rates it, and that feedback updates the recommender.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 10 5 0 10z" fill="#9db3ab"/>
+    </marker>
+    <marker id="feedback-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 10 5 0 10z" fill="#167768"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="440" rx="24" fill="#eaf1ed"/>
+  <rect x="24" y="24" width="1152" height="392" rx="20" fill="#ffffff"/>
+  <g font-family="Avenir Next, Trebuchet MS, sans-serif">
+    <text x="64" y="79" fill="#173b36" font-size="22" font-weight="700">The recommendation loop</text>
+    <text x="64" y="104" fill="#6b7c76" font-size="13">A recommendation produces feedback, and feedback improves the next choice.</text>
+
+    <g fill="none" stroke="#b3c8c0" stroke-linecap="round" stroke-width="2.5">
+      <path d="M306 214h22" marker-end="url(#arrow)"/>
+      <path d="M586 214h22" marker-end="url(#arrow)"/>
+      <path d="M866 214h22" marker-end="url(#arrow)"/>
+    </g>
+
+    <g>
+      <rect x="56" y="140" width="248" height="148" rx="10" fill="#edf6f3" stroke="#dce6e1"/>
+      <circle cx="180" cy="177" r="9" fill="#167768"/>
+      <path d="M161 204c2-12 9-18 19-18s17 6 19 18" fill="#167768"/>
+      <text x="180" y="238" text-anchor="middle" fill="#173b36" font-size="16" font-weight="700">Simulated user</text>
+      <text x="180" y="261" text-anchor="middle" fill="#71817c" font-size="12">context: country / time / device</text>
+    </g>
+
+    <g>
+      <rect x="336" y="140" width="248" height="148" rx="10" fill="#edf4e9" stroke="#dce6e1"/>
+      <rect x="444" y="160" width="32" height="32" rx="7" fill="#167768"/>
+      <path d="M451 168h7v8m0 0h8m-8 0v8m0-8h8" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <circle cx="451" cy="168" r="2" fill="#ffffff"/>
+      <circle cx="466" cy="168" r="2" fill="#ffffff"/>
+      <circle cx="466" cy="176" r="2" fill="#ffffff"/>
+      <circle cx="466" cy="184" r="2" fill="#ffffff"/>
+      <text x="460" y="238" text-anchor="middle" fill="#173b36" font-size="16" font-weight="700">Bandit</text>
+      <text x="460" y="261" text-anchor="middle" fill="#71817c" font-size="12">chooses a channel</text>
+    </g>
+
+    <g>
+      <rect x="616" y="140" width="248" height="148" rx="10" fill="#fbf3dc" stroke="#e9dfc1"/>
+      <rect x="720" y="161" width="40" height="28" rx="4" fill="#ffffff" stroke="#294c46" stroke-width="2.5"/>
+      <path d="m737 168 10 7-10 7z" fill="#e76f51"/>
+      <path d="M740 190v5m-10 3h20" fill="none" stroke="#294c46" stroke-linecap="round" stroke-width="2.5"/>
+      <text x="740" y="238" text-anchor="middle" fill="#173b36" font-size="16" font-weight="700">Recommendation</text>
+      <text x="740" y="261" text-anchor="middle" fill="#71817c" font-size="12">Sports channel</text>
+    </g>
+
+    <g>
+      <rect x="896" y="140" width="248" height="148" rx="10" fill="#fbede7" stroke="#eadbd4"/>
+      <rect x="995" y="169" width="10" height="10" rx="2" fill="#167768"/>
+      <rect x="1009" y="169" width="10" height="10" rx="2" fill="#167768"/>
+      <rect x="1023" y="169" width="10" height="10" rx="2" fill="#167768"/>
+      <rect x="1037" y="169" width="10" height="10" rx="2" fill="#167768"/>
+      <rect x="1051" y="169" width="10" height="10" rx="2" fill="none" stroke="#9db3ab" stroke-width="1.5"/>
+      <text x="1020" y="238" text-anchor="middle" fill="#173b36" font-size="16" font-weight="700">User feedback</text>
+      <text x="1020" y="261" text-anchor="middle" fill="#71817c" font-size="12">rating: 4 / 5</text>
+    </g>
+
+    <path d="M1020 288v54H460v-54" fill="none" stroke="#167768" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" marker-end="url(#feedback-arrow)"/>
+    <text x="740" y="372" text-anchor="middle" fill="#167768" font-size="13" font-weight="700">rating updates the bandit</text>
+  </g>
+</svg>

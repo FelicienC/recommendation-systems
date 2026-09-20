@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Favorite channel by country</title>
+  <desc id="desc">Five compact panels pair each country's flag with its highest group-average channel: United States, Technology; United Kingdom, Cuisine; France, Technology; Germany, Sports; Japan, Technology.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#183a32" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="520" rx="24" fill="#eaf1ed"/>
+  <rect x="24" y="24" width="1152" height="472" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+  <g font-family="Avenir Next, Trebuchet MS, sans-serif">
+    <text x="58" y="58" fill="#173b36" font-size="23" font-weight="700">A favorite channel for each country</text>
+    <text x="58" y="82" fill="#6b7c76" font-size="13">Top-rated channel within each country's group</text>
+
+    <g fill="#f8faf8" stroke="#dce6e1">
+      <rect x="64" y="98" width="200" height="270" rx="12"/>
+      <rect x="282" y="98" width="200" height="270" rx="12"/>
+      <rect x="500" y="98" width="200" height="270" rx="12"/>
+      <rect x="718" y="98" width="200" height="270" rx="12"/>
+      <rect x="936" y="98" width="200" height="270" rx="12"/>
+    </g>
+
+    <g fill="#173b36" font-size="13" font-weight="700" text-anchor="middle">
+      <text x="164" y="126">United States</text>
+      <text x="382" y="126">United Kingdom</text>
+      <text x="600" y="126">France</text>
+      <text x="818" y="126">Germany</text>
+      <text x="1036" y="126">Japan</text>
+    </g>
+
+    <g transform="translate(136 136)">
+      <rect width="56" height="34" fill="#ffffff"/>
+      <path d="M0 0h56v2.62H0z M0 5.23h56v2.62H0z M0 10.46h56v2.62H0z M0 15.69h56v2.62H0z M0 20.92h56v2.62H0z M0 26.15h56v2.62H0z M0 31.38h56v2.62H0z" fill="#b22234"/>
+      <rect width="22.4" height="18.31" fill="#3c3b6e"/>
+      <g fill="#ffffff">
+        <circle cx="2" cy="1.2" r="0.7"/><circle cx="5.6" cy="1.2" r="0.7"/><circle cx="9.2" cy="1.2" r="0.7"/><circle cx="12.8" cy="1.2" r="0.7"/><circle cx="16.4" cy="1.2" r="0.7"/><circle cx="20" cy="1.2" r="0.7"/>
+        <circle cx="3.8" cy="3.2" r="0.7"/><circle cx="7.4" cy="3.2" r="0.7"/><circle cx="11" cy="3.2" r="0.7"/><circle cx="14.6" cy="3.2" r="0.7"/><circle cx="18.2" cy="3.2" r="0.7"/>
+        <circle cx="2" cy="5.2" r="0.7"/><circle cx="5.6" cy="5.2" r="0.7"/><circle cx="9.2" cy="5.2" r="0.7"/><circle cx="12.8" cy="5.2" r="0.7"/><circle cx="16.4" cy="5.2" r="0.7"/><circle cx="20" cy="5.2" r="0.7"/>
+        <circle cx="3.8" cy="7.2" r="0.7"/><circle cx="7.4" cy="7.2" r="0.7"/><circle cx="11" cy="7.2" r="0.7"/><circle cx="14.6" cy="7.2" r="0.7"/><circle cx="18.2" cy="7.2" r="0.7"/>
+        <circle cx="2" cy="9.2" r="0.7"/><circle cx="5.6" cy="9.2" r="0.7"/><circle cx="9.2" cy="9.2" r="0.7"/><circle cx="12.8" cy="9.2" r="0.7"/><circle cx="16.4" cy="9.2" r="0.7"/><circle cx="20" cy="9.2" r="0.7"/>
+        <circle cx="3.8" cy="11.2" r="0.7"/><circle cx="7.4" cy="11.2" r="0.7"/><circle cx="11" cy="11.2" r="0.7"/><circle cx="14.6" cy="11.2" r="0.7"/><circle cx="18.2" cy="11.2" r="0.7"/>
+        <circle cx="2" cy="13.2" r="0.7"/><circle cx="5.6" cy="13.2" r="0.7"/><circle cx="9.2" cy="13.2" r="0.7"/><circle cx="12.8" cy="13.2" r="0.7"/><circle cx="16.4" cy="13.2" r="0.7"/><circle cx="20" cy="13.2" r="0.7"/>
+        <circle cx="3.8" cy="15.2" r="0.7"/><circle cx="7.4" cy="15.2" r="0.7"/><circle cx="11" cy="15.2" r="0.7"/><circle cx="14.6" cy="15.2" r="0.7"/><circle cx="18.2" cy="15.2" r="0.7"/>
+        <circle cx="2" cy="17.2" r="0.7"/><circle cx="5.6" cy="17.2" r="0.7"/><circle cx="9.2" cy="17.2" r="0.7"/><circle cx="12.8" cy="17.2" r="0.7"/><circle cx="16.4" cy="17.2" r="0.7"/><circle cx="20" cy="17.2" r="0.7"/>
+      </g>
+      <rect width="56" height="34" fill="none" stroke="#dce6e1"/>
+    </g>
+    <g transform="translate(354 136)">
+      <rect width="56" height="34" fill="#243b7a"/>
+      <path d="M0 0 56 34M56 0 0 34" stroke="#ffffff" stroke-width="9"/>
+      <path d="M0 0 56 34M56 0 0 34" stroke="#c8102e" stroke-width="4"/>
+      <path d="M28 0v34M0 17h56" stroke="#ffffff" stroke-width="12"/>
+      <path d="M28 0v34M0 17h56" stroke="#c8102e" stroke-width="6"/>
+      <rect width="56" height="34" fill="none" stroke="#dce6e1"/>
+    </g>
+    <g transform="translate(572 136)">
+      <rect width="19" height="34" fill="#0055a4"/>
+      <rect x="19" width="18" height="34" fill="#ffffff"/>
+      <rect x="37" width="19" height="34" fill="#ef4135"/>
+      <rect width="56" height="34" fill="none" stroke="#dce6e1"/>
+    </g>
+    <g transform="translate(790 136)">
+      <rect width="56" height="11.3" fill="#1b1b1b"/>
+      <rect y="11.3" width="56" height="11.4" fill="#dd0000"/>
+      <rect y="22.7" width="56" height="11.3" fill="#ffce00"/>
+      <rect width="56" height="34" fill="none" stroke="#dce6e1"/>
+    </g>
+    <g transform="translate(1008 136)">
+      <rect width="56" height="34" fill="#ffffff" stroke="#dce6e1"/>
+      <circle cx="28" cy="17" r="9" fill="#bc002d"/>
+    </g>
+
+    <defs>
+      <g id="card-tech">
+        <rect x="56" y="198" width="204" height="286" rx="10" fill="#ffffff" stroke="#dce6e1"/>
+        <path d="M66 198h184a10 10 0 0 1 10 10v178H56V208a10 10 0 0 1 10-10z" fill="#d8eeee"/>
+        <circle cx="226" cy="223" r="19" fill="#b5dfdb"/>
+        <circle cx="82" cy="353" r="28" fill="#b9e3de"/>
+        <rect x="91" y="247" width="132" height="89" rx="9" fill="#234e52"/>
+        <rect x="99" y="255" width="116" height="72" rx="4" fill="#e2f4ee"/>
+        <path d="M110 273h42m-42 10h67m-67 10h51m-51 10h33" stroke="#4c9b88" stroke-linecap="round" stroke-width="4"/>
+        <circle cx="195" cy="273" r="5" fill="#f0bd54"/>
+        <path d="M147 336v10m-19 5h58" stroke="#234e52" stroke-linecap="round" stroke-width="6"/>
+        <text x="74" y="421" fill="#173b36" font-size="16" font-weight="700">Technology</text>
+        <text x="74" y="449" fill="#82908a" font-size="11">FAVORITE CHANNEL</text>
+      </g>
+      <g id="card-sports">
+        <rect x="277" y="198" width="204" height="286" rx="10" fill="#ffffff" stroke="#dce6e1"/>
+        <path d="M287 198h184a10 10 0 0 1 10 10v178H277V208a10 10 0 0 1 10-10z" fill="#dcefd9"/>
+        <rect x="300" y="218" width="158" height="137" rx="8" fill="#78aa72"/>
+        <rect x="306" y="224" width="146" height="125" fill="none" stroke="#f3f7e9" stroke-width="2"/>
+        <path d="M379 225v123" stroke="#f3f7e9" stroke-width="2"/>
+        <circle cx="379" cy="286.5" r="20" fill="none" stroke="#f3f7e9" stroke-width="2"/>
+        <circle cx="379" cy="286.5" r="2" fill="#f3f7e9"/>
+        <path d="M306 255h23v63h-23m146 0h-23v-63h23M306 273h9v27h-9m146 0h-9v-27h9" fill="none" stroke="#f3f7e9" stroke-width="2" stroke-linejoin="round"/>
+        <text x="295" y="421" fill="#173b36" font-size="16" font-weight="700">Sports</text>
+        <text x="295" y="449" fill="#82908a" font-size="11">FAVORITE CHANNEL</text>
+      </g>
+      <g id="card-cuisine">
+      <rect x="498" y="198" width="204" height="286" rx="10" fill="#ffffff" stroke="#dce6e1"/>
+      <path d="M508 198h184a10 10 0 0 1 10 10v178H498V208a10 10 0 0 1 10-10z" fill="#f8e0d4"/>
+      <circle cx="600" cy="286" r="68" fill="#fff8ef"/>
+      <circle cx="600" cy="286" r="52" fill="#eaa47e"/>
+      <path d="M548 286a52 52 0 0 0 104 0z" fill="#f1c36f"/>
+      <path d="M582 291c5-15 19-22 36-18-3 15-17 23-36 18zm10-2 18-12" fill="#72936b" stroke="#72936b" stroke-linejoin="round" stroke-width="2"/>
+      <text x="516" y="421" fill="#173b36" font-size="16" font-weight="700">Cuisine</text>
+      <text x="516" y="449" fill="#82908a" font-size="11">FAVORITE CHANNEL</text>
+      </g>
+    </defs>
+    <use href="#card-tech" transform="translate(6 0)"/>
+    <use href="#card-cuisine" transform="translate(-218 0)"/>
+    <use href="#card-tech" transform="translate(442 0)"/>
+    <use href="#card-sports" transform="translate(439 0)"/>
+    <use href="#card-tech" transform="translate(878 0)"/>
+  </g>
+</svg>

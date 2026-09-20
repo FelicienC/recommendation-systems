@@ -10,11 +10,11 @@ from enum import Enum
 
 import numpy as np
 
-random.seed(21)
+random.seed(21)  # Keep notebook output reproducible
 
 
-class Nationality(Enum):
-    """Define supported user nationalities."""
+class Country(Enum):
+    """Define supported user countries."""
 
     US = "US"
     UK = "UK"
@@ -38,8 +38,8 @@ class TimeOfDay(Enum):
     OTHER = "other"
 
 
-class ItemTitle(Enum):
-    """Define supported item titles."""
+class Item(Enum):
+    """Define supported recommendation items."""
 
     TECHNOLOGY = "Technology"
     SPORTS = "Sports"
@@ -52,23 +52,25 @@ class ItemTitle(Enum):
 class User:
     """Represent a simulated user."""
 
-    nationality: Nationality
+    country: Country
     time_of_day: TimeOfDay
     device_type: DeviceType
     age: int
 
-
-@dataclass
-class Item:
-    """Represent one item in the catalog."""
-
-    title: ItemTitle
+    def __repr__(self) -> str:
+        """Return a string representation of the user."""
+        return (
+            f"User(country={self.country.value}, "
+            f"time_of_day={self.time_of_day.value}, "
+            f"device_type={self.device_type.value}, "
+            f"age={self.age})"
+        )
 
 
 def random_user() -> User:
     """Create one user from the simulator's supported values."""
     return User(
-        nationality=random.choice(tuple(Nationality)),
+        country=random.choice(tuple(Country)),
         time_of_day=random.choice(tuple(TimeOfDay)),
         device_type=random.choice(tuple(DeviceType)),
         age=random.randint(18, 70),
@@ -78,7 +80,7 @@ def random_user() -> User:
 def user_to_features(user: User) -> np.ndarray:
     """Convert a simulated user into a numeric feature vector."""
     features = [1.0]
-    features += [float(user.nationality == value) for value in Nationality]
+    features += [float(user.country == value) for value in Country]
     features += [float(user.time_of_day == value) for value in TimeOfDay]
     features += [float(user.device_type == value) for value in DeviceType]
     features += [(user.age - 44.0) / 26.0]
@@ -100,32 +102,32 @@ def rate_item_deterministic(user: User, item: Item) -> int:
     Ratings are on a scale from 1 to 5.
     """
     preference_rules = {
-        Nationality.FR: (
-            (ItemTitle.CUISINE, user.time_of_day == TimeOfDay.MORNING),
-            (ItemTitle.TECHNOLOGY, user.time_of_day == TimeOfDay.EVENING),
+        Country.FR: (
+            (Item.CUISINE, user.time_of_day == TimeOfDay.MORNING),
+            (Item.TECHNOLOGY, user.time_of_day == TimeOfDay.EVENING),
         ),
-        Nationality.US: (
-            (ItemTitle.TECHNOLOGY, user.time_of_day == TimeOfDay.MORNING),
-            (ItemTitle.SPORTS, user.time_of_day == TimeOfDay.EVENING),
+        Country.US: (
+            (Item.TECHNOLOGY, user.time_of_day == TimeOfDay.MORNING),
+            (Item.SPORTS, user.time_of_day == TimeOfDay.EVENING),
         ),
-        Nationality.DE: (
-            (ItemTitle.CAR, user.device_type == DeviceType.MOBILE),
-            (ItemTitle.SPORTS, user.device_type == DeviceType.DESKTOP),
+        Country.DE: (
+            (Item.CAR, user.device_type == DeviceType.MOBILE),
+            (Item.SPORTS, user.device_type == DeviceType.DESKTOP),
         ),
-        Nationality.JP: (
-            (ItemTitle.ART, user.time_of_day == TimeOfDay.MORNING),
-            (ItemTitle.TECHNOLOGY, user.time_of_day == TimeOfDay.EVENING),
+        Country.JP: (
+            (Item.ART, user.time_of_day == TimeOfDay.MORNING),
+            (Item.TECHNOLOGY, user.time_of_day == TimeOfDay.EVENING),
         ),
-        Nationality.UK: (
-            (ItemTitle.SPORTS, user.device_type == DeviceType.MOBILE),
-            (ItemTitle.CUISINE, user.device_type == DeviceType.DESKTOP),
+        Country.UK: (
+            (Item.SPORTS, user.device_type == DeviceType.MOBILE),
+            (Item.CUISINE, user.device_type == DeviceType.DESKTOP),
         ),
     }
     return (
         5
         if any(
-            item.title == preferred_item and matches
-            for preferred_item, matches in preference_rules[user.nationality]
+            item == preferred_item and matches
+            for preferred_item, matches in preference_rules[user.country]
         )
         else 3
     )
@@ -136,11 +138,11 @@ def rate_item(user: User, item: Item) -> int:
     base_rating = rate_item_deterministic(user, item)
     age_centered = (user.age - 44.0) / 26.0
     age_sensitivity = {
-        ItemTitle.TECHNOLOGY: -1.0,
-        ItemTitle.SPORTS: -0.5,
-        ItemTitle.CUISINE: 0.25,
-        ItemTitle.CAR: 0.5,
-        ItemTitle.ART: 0.75,
-    }[item.title]
+        Item.TECHNOLOGY: -1.0,
+        Item.SPORTS: -0.5,
+        Item.CUISINE: 0.25,
+        Item.CAR: 0.5,
+        Item.ART: 0.75,
+    }[item]
     noise = random.choice([-1, 0, 1])
     return max(1, min(5, round(base_rating + age_centered * age_sensitivity + noise)))

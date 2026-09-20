@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 400" role="img" aria-labelledby="title desc">
+  <title id="title">Global average recommendation</title>
+  <desc id="desc">Technology 3.38, Sports 3.40, and Cuisine 3.25 out of 5. Always recommend Sports.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#183a32" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 10 5 0 10z" fill="#357b6c"/>
+    </marker>
+    <clipPath id="screen">
+      <rect x="24" y="24" width="1052" height="352" rx="20"/>
+    </clipPath>
+  </defs>
+  <rect width="1100" height="400" rx="24" fill="#eaf1ed"/>
+  <rect x="24" y="24" width="1052" height="352" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+  <g clip-path="url(#screen)" font-family="Avenir Next, Trebuchet MS, sans-serif">
+    <g transform="translate(0 -141)">
+      <g>
+        <rect x="56" y="198" width="204" height="286" rx="10" fill="#ffffff" stroke="#dce6e1"/>
+        <path d="M66 198h184a10 10 0 0 1 10 10v178H56V208a10 10 0 0 1 10-10z" fill="#d8eeee"/>
+        <circle cx="226" cy="223" r="19" fill="#b5dfdb"/>
+        <circle cx="82" cy="353" r="28" fill="#b9e3de"/>
+        <rect x="91" y="247" width="132" height="89" rx="9" fill="#234e52"/>
+        <rect x="99" y="255" width="116" height="72" rx="4" fill="#e2f4ee"/>
+        <path d="M110 273h42m-42 10h67m-67 10h51m-51 10h33" stroke="#4c9b88" stroke-linecap="round" stroke-width="4"/>
+        <circle cx="195" cy="273" r="5" fill="#f0bd54"/>
+        <path d="M147 336v10m-19 5h58" stroke="#234e52" stroke-linecap="round" stroke-width="6"/>
+        <text x="74" y="421" fill="#173b36" font-size="16" font-weight="700">Technology</text>
+        <text x="74" y="449" fill="#82908a" font-size="14">3.38 / 5</text>
+        <circle cx="235" cy="432" r="13" fill="#eef5f2"/>
+        <path d="m232 426 7 6-7 6" fill="none" stroke="#357b6c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+      </g>
+
+      <g>
+        <rect x="277" y="198" width="204" height="286" rx="10" fill="#ffffff" stroke="#dce6e1"/>
+        <path d="M287 198h184a10 10 0 0 1 10 10v178H277V208a10 10 0 0 1 10-10z" fill="#dcefd9"/>
+        <rect x="300" y="218" width="158" height="137" rx="8" fill="#78aa72"/>
+        <rect x="306" y="224" width="146" height="125" fill="none" stroke="#f3f7e9" stroke-width="2"/>
+        <path d="M379 225v123" stroke="#f3f7e9" stroke-width="2"/>
+        <circle cx="379" cy="286.5" r="20" fill="none" stroke="#f3f7e9" stroke-width="2"/>
+        <circle cx="379" cy="286.5" r="2" fill="#f3f7e9"/>
+        <path d="M306 255h23v63h-23m146 0h-23v-63h23M306 273h9v27h-9m146 0h-9v-27h9" fill="none" stroke="#f3f7e9" stroke-width="2" stroke-linejoin="round"/>
+        <text x="295" y="421" fill="#173b36" font-size="16" font-weight="700">Sports</text>
+        <text x="295" y="449" fill="#82908a" font-size="14">3.40 / 5</text>
+        <circle cx="456" cy="432" r="13" fill="#eef5f2"/>
+        <path d="m453 426 7 6-7 6" fill="none" stroke="#357b6c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+      </g>
+
+      <g>
+        <rect x="498" y="198" width="204" height="286" rx="10" fill="#ffffff" stroke="#dce6e1"/>
+        <path d="M508 198h184a10 10 0 0 1 10 10v178H498V208a10 10 0 0 1 10-10z" fill="#f8e0d4"/>
+        <circle cx="600" cy="286" r="68" fill="#fff8ef"/>
+        <circle cx="600" cy="286" r="52" fill="#eaa47e"/>
+        <path d="M548 286a52 52 0 0 0 104 0z" fill="#f1c36f"/>
+        <path d="M582 291c5-15 19-22 36-18-3 15-17 23-36 18zm10-2 18-12" fill="#72936b" stroke="#72936b" stroke-linejoin="round" stroke-width="2"/>
+        <text x="516" y="421" fill="#173b36" font-size="16" font-weight="700">Cuisine</text>
+        <text x="516" y="449" fill="#82908a" font-size="14">3.25 / 5</text>
+        <circle cx="677" cy="432" r="13" fill="#eef5f2"/>
+        <path d="m674 426 7 6-7 6" fill="none" stroke="#357b6c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+      </g>
+    </g>
+
+    <path d="M724 208h64" fill="none" stroke="#357b6c" stroke-linecap="round" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="810" y="198" fill="#173b36" font-size="20" font-weight="700">Always recommend</text>
+    <text x="810" y="240" fill="#167768" font-size="30" font-weight="700">Sports</text>
+  </g>
+</svg>

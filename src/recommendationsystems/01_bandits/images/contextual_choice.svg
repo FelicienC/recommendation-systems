@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">A new viewer faces a recommendation</title>
+  <desc id="desc">A plain user silhouette faces a question-mark recommender and three equally sized, unlabeled channel choices arranged in one row.</desc>
+  <defs>
+    <clipPath id="screen">
+      <rect x="24" y="34" width="1152" height="292" rx="20"/>
+    </clipPath>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 10 5 0 10z" fill="#9db3ab"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="360" rx="24" fill="#eaf1ed"/>
+  <rect x="24" y="34" width="1152" height="292" rx="20" fill="#ffffff"/>
+  <g clip-path="url(#screen)">
+    <g transform="translate(0 -40)">
+    <g fill="none" stroke="#b3c8c0" stroke-linecap="round" stroke-width="2.5">
+      <path d="M240 220h158" marker-end="url(#arrow)"/>
+      <path d="M560 220h171" marker-end="url(#arrow)"/>
+    </g>
+
+    <g>
+      <circle cx="162" cy="220" r="60" fill="#d8eeee"/>
+      <circle cx="162" cy="201" r="18" fill="#167768"/>
+      <path d="M127 257c2-23 16-37 35-37s33 14 35 37" fill="#167768"/>
+    </g>
+
+    <g>
+      <circle cx="475" cy="220" r="58" fill="#f2f6f4" stroke="#dce6e1"/>
+      <path d="M460 207c2-8 9-12 17-10 7 2 10 10 5 16-3 4-8 6-9 12" fill="none" stroke="#294c46" stroke-linecap="round" stroke-width="5"/>
+      <circle cx="473" cy="239" r="3" fill="#294c46"/>
+    </g>
+
+    <g>
+      <rect x="760" y="166" width="108" height="108" rx="9" fill="#d8eeee" stroke="#dce6e1"/>
+      <rect x="782" y="193" width="64" height="42" rx="4" fill="#234e52"/>
+      <rect x="787" y="198" width="54" height="32" rx="2" fill="#e2f4ee"/>
+      <path d="M814 235v7m-12 4h24" fill="none" stroke="#234e52" stroke-linecap="round" stroke-width="3"/>
+    </g>
+
+    <g>
+      <rect x="884" y="166" width="108" height="108" rx="9" fill="#dcefd9" stroke="#dce6e1"/>
+      <rect x="906" y="188" width="64" height="64" rx="7" fill="#78aa72"/>
+      <rect x="912" y="194" width="52" height="52" fill="none" stroke="#f3f7e9" stroke-width="1.5"/>
+      <path d="M938 195v50" stroke="#f3f7e9" stroke-width="1.5"/>
+      <circle cx="938" cy="220" r="10" fill="none" stroke="#f3f7e9" stroke-width="1.5"/>
+    </g>
+
+    <g>
+      <rect x="1008" y="166" width="108" height="108" rx="9" fill="#f8e0d4" stroke="#dce6e1"/>
+      <circle cx="1062" cy="220" r="30" fill="#fff8ef"/>
+      <circle cx="1062" cy="220" r="22" fill="#eaa47e"/>
+      <path d="M1054 221c4-8 12-10 18-8-2 8-10 11-18 8zm5 0 11-7" fill="#72936b" stroke="#72936b" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+    </g>
+  </g>
+</svg>

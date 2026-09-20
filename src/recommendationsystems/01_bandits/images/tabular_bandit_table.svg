@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
+  <title id="title">A tabular contextual bandit table</title>
+  <desc id="desc">For one context, France, age 20, morning, and mobile, the table compares estimated mean ratings for five items. Cuisine has the highest estimated mean. The full simulator has 1,590 contexts and 7,950 context-item estimates.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#183a32" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 10 5 0 10z" fill="#357b6c"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="400" rx="24" fill="#eaf1ed"/>
+  <rect x="24" y="24" width="1152" height="354" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+  <g font-family="Avenir Next, Trebuchet MS, sans-serif">
+    <text x="58" y="61" fill="#173b36" font-size="22" font-weight="700">One context. Five item estimates.</text>
+    <text x="58" y="84" fill="#6b7c76" font-size="13">Compare the estimated rating of each item for one context.</text>
+
+    <rect x="824" y="43" width="318" height="49" rx="10" fill="#eef5f2" stroke="#dce6e1"/>
+    <text x="842" y="62" fill="#6b7c76" font-size="10" font-weight="700">FULL SIMULATOR TABLE</text>
+    <text x="842" y="81" fill="#173b36" font-size="14" font-weight="700">1,590 contexts x 5 items = 7,950 estimates</text>
+
+    <rect x="58" y="104" width="250" height="254" rx="12" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="78" y="132" fill="#167768" font-size="11" font-weight="700">ONE USER CONTEXT</text>
+    <path d="M78 145h210" stroke="#dce6e1"/>
+    <g fill="#82908a" font-size="11" font-weight="700">
+      <text x="78" y="174">COUNTRY</text>
+      <text x="78" y="212">AGE</text>
+      <text x="78" y="250">TIME</text>
+      <text x="78" y="288">DEVICE</text>
+    </g>
+    <g fill="#173b36" font-size="14" font-weight="700" text-anchor="end">
+      <text x="288" y="174">France</text>
+      <text x="288" y="212">20 years</text>
+      <text x="288" y="250">Morning</text>
+      <text x="288" y="288">Mobile</text>
+    </g>
+    <path d="M78 184h210m-210 38h210m-210 38h210" stroke="#e4ebe7"/>
+    <circle cx="84" cy="333" r="4" fill="#f0bd54"/>
+    <text x="96" y="337" fill="#6b7c76" font-size="11">One exact combination</text>
+
+    <path d="M313 231h25" fill="none" stroke="#357b6c" stroke-linecap="round" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+    <rect x="348" y="104" width="794" height="254" rx="12" fill="#ffffff" stroke="#dce6e1"/>
+    <text x="370" y="132" fill="#173b36" font-size="12" font-weight="700">ESTIMATED MEAN RATING BY ITEM</text>
+    <text x="1080" y="164" fill="#82908a" font-size="10" font-weight="700" text-anchor="middle">MEAN / 5</text>
+    <text x="388" y="164" fill="#82908a" font-size="10" font-weight="700">ITEM</text>
+    <path d="M370 172h750" stroke="#dce6e1"/>
+
+    <g font-size="13">
+      <rect x="370" y="178" width="750" height="30" rx="6" fill="#f8faf8"/>
+      <text x="388" y="198" fill="#173b36" font-weight="700">Technology</text>
+      <rect x="610" y="189" width="320" height="8" rx="4" fill="#edf3f0"/>
+      <rect x="610" y="189" width="198" height="8" rx="4" fill="#82ad9f"/>
+      <text x="1080" y="198" fill="#173b36" font-weight="700" text-anchor="middle">3.1</text>
+
+      <rect x="370" y="212" width="750" height="30" rx="6" fill="#f8faf8"/>
+      <text x="388" y="232" fill="#173b36" font-weight="700">Sports</text>
+      <rect x="610" y="223" width="320" height="8" rx="4" fill="#edf3f0"/>
+      <rect x="610" y="223" width="192" height="8" rx="4" fill="#82ad9f"/>
+      <text x="1080" y="232" fill="#173b36" font-weight="700" text-anchor="middle">3.0</text>
+
+      <rect x="370" y="246" width="750" height="30" rx="6" fill="#e2f4ee" stroke="#b5dfd0"/>
+      <text x="388" y="266" fill="#173b36" font-weight="700">Cuisine</text>
+      <rect x="610" y="257" width="320" height="8" rx="4" fill="#d9e9e2"/>
+      <rect x="610" y="257" width="307" height="8" rx="4" fill="#167768"/>
+      <text x="1080" y="266" fill="#167768" font-weight="700" text-anchor="middle">4.8</text>
+
+      <rect x="370" y="280" width="750" height="30" rx="6" fill="#f8faf8"/>
+      <text x="388" y="300" fill="#173b36" font-weight="700">Car</text>
+      <rect x="610" y="291" width="320" height="8" rx="4" fill="#edf3f0"/>
+      <rect x="610" y="291" width="205" height="8" rx="4" fill="#82ad9f"/>
+      <text x="1080" y="300" fill="#173b36" font-weight="700" text-anchor="middle">3.2</text>
+
+      <rect x="370" y="314" width="750" height="30" rx="6" fill="#f8faf8"/>
+      <text x="388" y="334" fill="#173b36" font-weight="700">Art</text>
+      <rect x="610" y="325" width="320" height="8" rx="4" fill="#edf3f0"/>
+      <rect x="610" y="325" width="192" height="8" rx="4" fill="#82ad9f"/>
+      <text x="1080" y="334" fill="#173b36" font-weight="700" text-anchor="middle">3.0</text>
+    </g>
+
+  </g>
+</svg>

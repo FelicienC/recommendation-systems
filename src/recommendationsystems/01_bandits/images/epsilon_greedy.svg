@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 310" role="img" aria-labelledby="title desc">
+  <title id="title">Epsilon-greedy exploration and exploitation</title>
+  <desc id="desc">After an initial try of each channel, a random draw p splits into exploration when p is below epsilon and exploitation otherwise. At epsilon equals 0.1, exploration has 10 percent probability and exploitation 90 percent.</desc>
+  <defs>
+    <marker id="explore-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 10 5 0 10z" fill="#e76f51"/>
+    </marker>
+    <marker id="exploit-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 10 5 0 10z" fill="#167768"/>
+    </marker>
+  </defs>
+  <rect width="900" height="310" rx="20" fill="#eaf1ed"/>
+  <rect x="16" y="16" width="868" height="278" rx="14" fill="#ffffff"/>
+  <g font-family="Avenir Next, Trebuchet MS, sans-serif">
+    <text x="48" y="54" fill="#173b36" font-size="21" font-weight="700">Epsilon-greedy: two possible choices</text>
+    <text x="48" y="78" fill="#6b7c76" font-size="13">After each channel has one first try, draw p uniformly from [0, 1).</text>
+
+    <rect x="337" y="98" width="226" height="54" rx="9" fill="#f2f5e9" stroke="#dfe5d5"/>
+    <text x="450" y="132" text-anchor="middle" fill="#173b36" font-size="18" font-weight="700">Is p &lt; &#949;?</text>
+
+    <path d="M450 152v18H242v16" fill="none" stroke="#e76f51" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" marker-end="url(#explore-arrow)"/>
+    <path d="M450 152v18h208v16" fill="none" stroke="#167768" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" marker-end="url(#exploit-arrow)"/>
+
+    <rect x="56" y="190" width="372" height="100" rx="10" fill="#fbede7" stroke="#eadbd4"/>
+    <text x="80" y="215" fill="#b85e45" font-size="11" font-weight="700">YES | &#949; = 0.1 (10%)</text>
+    <text x="80" y="246" fill="#173b36" font-size="17" font-weight="700">EXPLORE</text>
+    <text x="80" y="270" fill="#71817c" font-size="13">Choose a random channel</text>
+
+    <rect x="472" y="190" width="372" height="100" rx="10" fill="#edf6f3" stroke="#dce6e1"/>
+    <text x="496" y="215" fill="#167768" font-size="11" font-weight="700">NO | 1 - &#949; = 0.9 (90%)</text>
+    <text x="496" y="246" fill="#173b36" font-size="17" font-weight="700">EXPLOIT</text>
+    <text x="496" y="270" fill="#71817c" font-size="13">Choose the highest estimated rating</text>
+  </g>
+</svg>

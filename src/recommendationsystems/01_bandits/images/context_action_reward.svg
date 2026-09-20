@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 232" role="img" aria-labelledby="title desc">
+  <title id="title">Context, action, reward</title>
+  <desc id="desc">A user's country, time of day, and device inform the channel choice. The user's rating is the reward.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 10 5 0 10z" fill="#9db3ab"/>
+    </marker>
+  </defs>
+  <rect width="900" height="232" rx="16" fill="#eaf1ed"/>
+  <rect x="16" y="16" width="868" height="200" rx="12" fill="#ffffff"/>
+  <g font-family="Avenir Next, Trebuchet MS, sans-serif">
+    <path d="M288 116h29M581 116h29" fill="none" stroke="#9db3ab" stroke-linecap="round" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <g>
+      <rect x="32" y="42" width="250" height="148" rx="10" fill="#edf6f3" stroke="#dce6e1"/>
+      <text x="56" y="72" fill="#167768" font-size="12" font-weight="700">CONTEXT</text>
+      <text x="56" y="108" fill="#173b36" font-size="19" font-weight="700">User situation</text>
+      <text x="56" y="139" fill="#71817c" font-size="13">France / evening / mobile</text>
+    </g>
+    <g>
+      <rect x="325" y="42" width="250" height="148" rx="10" fill="#f2f5e9" stroke="#dfe5d5"/>
+      <text x="349" y="72" fill="#167768" font-size="12" font-weight="700">ACTION</text>
+      <text x="349" y="108" fill="#173b36" font-size="19" font-weight="700">Choose an item</text>
+      <text x="349" y="139" fill="#71817c" font-size="13">Sports channel</text>
+    </g>
+    <g>
+      <rect x="618" y="42" width="250" height="148" rx="10" fill="#fbf3dc" stroke="#e9dfc1"/>
+      <text x="642" y="72" fill="#b46b35" font-size="12" font-weight="700">REWARD</text>
+      <text x="642" y="108" fill="#173b36" font-size="19" font-weight="700">User feedback</text>
+      <text x="642" y="139" fill="#71817c" font-size="13">Rating: 4 / 5</text>
+    </g>
+  </g>
+</svg>
