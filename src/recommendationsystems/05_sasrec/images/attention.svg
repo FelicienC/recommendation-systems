@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 390" role="img" aria-labelledby="title desc">
+  <title id="title">Attention</title>
+  <desc id="desc">The last film of the trail, Bram Stoker's Dracula, looks back at the earlier films with learned weights: 0.10 for A Nightmare on Elm Street, 0.35 for The Body Snatcher, 0.20 for The Omen, 0.15 for Carrie, 0.20 for itself. The weighted blend of their vectors is compared with every film to score what comes next.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#183a32" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6b7c76"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="390" rx="24" fill="#eaf1ed"/>
+  <rect x="24" y="24" width="1052" height="342" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+  <g font-family="Avenir Next, Trebuchet MS, sans-serif">
+    <text x="58" y="68" fill="#173b36" font-size="23" font-weight="700">Attention: each film looks back at the films before it</text>
+    <text x="58" y="92" fill="#6b7c76" font-size="13">The model learns how much each earlier film counts for what comes next</text>
+    <rect x="58" y="200" width="130" height="80" rx="10" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="123.0" y="235" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">A Nightmare</text>
+    <text x="123.0" y="255" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">on Elm Street</text>
+    <path d="M 123.0 196 C 123.0 105 680 105 680 194" stroke="#357b6c" stroke-width="1.8" fill="none" opacity="0.8"/>
+    <text x="123.0" y="308" fill="#167768" font-size="17" font-weight="700" text-anchor="middle">0.10</text>
+    <rect x="208" y="200" width="130" height="80" rx="10" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="273.0" y="235" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">The Body</text>
+    <text x="273.0" y="255" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">Snatcher</text>
+    <path d="M 273.0 196 C 273.0 120 700 120 700 194" stroke="#357b6c" stroke-width="3.8" fill="none" opacity="0.8"/>
+    <text x="273.0" y="308" fill="#167768" font-size="17" font-weight="700" text-anchor="middle">0.35</text>
+    <rect x="358" y="200" width="130" height="80" rx="10" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="423.0" y="245" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">The Omen</text>
+    <path d="M 423.0 196 C 423.0 135 720 135 720 194" stroke="#357b6c" stroke-width="2.6" fill="none" opacity="0.8"/>
+    <text x="423.0" y="308" fill="#167768" font-size="17" font-weight="700" text-anchor="middle">0.20</text>
+    <rect x="508" y="200" width="130" height="80" rx="10" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="573.0" y="245" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">Carrie</text>
+    <path d="M 573.0 196 C 573.0 150 740 150 740 194" stroke="#357b6c" stroke-width="2.2" fill="none" opacity="0.8"/>
+    <text x="573.0" y="308" fill="#167768" font-size="17" font-weight="700" text-anchor="middle">0.15</text>
+    <rect x="658" y="200" width="130" height="80" rx="10" fill="#357b6c" stroke="none"/>
+    <text x="723.0" y="235" fill="#ffffff" font-size="15" font-weight="700" text-anchor="middle">Bram Stoker's</text>
+    <text x="723.0" y="255" fill="#ffffff" font-size="15" font-weight="700" text-anchor="middle">Dracula</text>
+    <text x="723.0" y="308" fill="#167768" font-size="17" font-weight="700" text-anchor="middle">0.20</text>
+    <text x="58" y="332" fill="#6b7c76" font-size="13">How much Dracula looks at each film (weights sum to 1). It never looks forward: there is nothing after it yet.</text>
+    <path d="M 796 240 L 850 240" stroke="#6b7c76" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <rect x="858" y="180" width="190" height="120" rx="10" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="953.0" y="215" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">Blend their</text>
+    <text x="953.0" y="235" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">vectors, then</text>
+    <text x="953.0" y="255" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">score every</text>
+    <text x="953.0" y="275" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">film</text>
+  </g>
+</svg>

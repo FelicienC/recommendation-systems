@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 330" role="img" aria-labelledby="title desc">
+  <title id="title">A trail of likes</title>
+  <desc id="desc">The last five films liked by user 366, from oldest to newest: A Nightmare on Elm Street, The Body Snatcher, The Omen, Carrie, Bram Stoker's Dracula. The next film is unknown.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#183a32" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6b7c76"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="330" rx="24" fill="#eaf1ed"/>
+  <rect x="24" y="24" width="1052" height="282" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+  <g font-family="Avenir Next, Trebuchet MS, sans-serif">
+    <text x="58" y="68" fill="#173b36" font-size="23" font-weight="700">A history is a trail, not a bag</text>
+    <text x="58" y="92" fill="#6b7c76" font-size="13">The last five films our horror fan liked, in order. What comes next?</text>
+    <rect x="58.0" y="140" width="140" height="90" rx="10" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="128.0" y="180.0" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">A Nightmare</text>
+    <text x="128.0" y="200.0" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">on Elm Street</text>
+    <path d="M 202.0 185 L 222.8 185" stroke="#6b7c76" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <rect x="226.8" y="140" width="140" height="90" rx="10" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="296.8" y="180.0" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">The Body</text>
+    <text x="296.8" y="200.0" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">Snatcher</text>
+    <path d="M 370.8 185 L 391.6 185" stroke="#6b7c76" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <rect x="395.6" y="140" width="140" height="90" rx="10" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="465.6" y="190.0" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">The Omen</text>
+    <path d="M 539.6 185 L 560.4 185" stroke="#6b7c76" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <rect x="564.4000000000001" y="140" width="140" height="90" rx="10" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="634.4000000000001" y="190.0" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">Carrie</text>
+    <path d="M 708.4000000000001 185 L 729.2 185" stroke="#6b7c76" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <rect x="733.2" y="140" width="140" height="90" rx="10" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="803.2" y="180.0" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">Bram Stoker's</text>
+    <text x="803.2" y="200.0" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">Dracula</text>
+    <path d="M 877.2 185 L 898.0 185" stroke="#6b7c76" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <rect x="902.0" y="140" width="140" height="90" rx="10" fill="#ffffff" stroke="#e76f51" stroke-dasharray="6 5" stroke-width="2"/>
+    <text x="972.0" y="190.0" fill="#e76f51" font-size="19" font-weight="700" text-anchor="middle">next?</text>
+    <path d="M 58 262 L 1030 262" stroke="#dce6e1" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="58" y="286" fill="#6b7c76" font-size="14">older</text>
+    <text x="1042" y="286" fill="#6b7c76" font-size="14" text-anchor="end">time</text>
+  </g>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 380" role="img" aria-labelledby="title desc">
+  <title id="title">What comes next</title>
+  <desc id="desc">Three users liked Carrie. Right after it, two of them liked The Shining and one liked The Omen. Counting these pairs tells us what usually comes after Carrie.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#183a32" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6b7c76"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="380" rx="24" fill="#eaf1ed"/>
+  <rect x="24" y="24" width="1052" height="332" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+  <g font-family="Avenir Next, Trebuchet MS, sans-serif">
+    <text x="58" y="68" fill="#173b36" font-size="23" font-weight="700">Count what people liked right after</text>
+    <text x="58" y="92" fill="#6b7c76" font-size="13">A table of pairs: after this film, people liked that one</text>
+    <text x="150" y="159" fill="#173b36" font-size="17" font-weight="700" text-anchor="end">User A</text>
+    <rect x="170" y="130" width="112" height="44" rx="10" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="226.0" y="157.0" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">Psycho</text>
+    <path d="M 285 152 L 307 152" stroke="#6b7c76" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <rect x="310" y="130" width="112" height="44" rx="10" fill="#357b6c" stroke="none"/>
+    <text x="366.0" y="157.0" fill="#ffffff" font-size="15" font-weight="700" text-anchor="middle">Carrie</text>
+    <path d="M 425 152 L 447 152" stroke="#6b7c76" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <rect x="450" y="130" width="112" height="44" rx="10" fill="#357b6c" stroke="none"/>
+    <text x="506.0" y="157.0" fill="#ffffff" font-size="15" font-weight="700" text-anchor="middle">The Shining</text>
+    <path d="M 565 152 L 587 152" stroke="#6b7c76" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <rect x="590" y="130" width="112" height="44" rx="10" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="646.0" y="157.0" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">Fargo</text>
+    <text x="150" y="229" fill="#173b36" font-size="17" font-weight="700" text-anchor="end">User B</text>
+    <rect x="170" y="200" width="112" height="44" rx="10" fill="#357b6c" stroke="none"/>
+    <text x="226.0" y="227.0" fill="#ffffff" font-size="15" font-weight="700" text-anchor="middle">Carrie</text>
+    <path d="M 285 222 L 307 222" stroke="#6b7c76" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <rect x="310" y="200" width="112" height="44" rx="10" fill="#357b6c" stroke="none"/>
+    <text x="366.0" y="227.0" fill="#ffffff" font-size="15" font-weight="700" text-anchor="middle">The Shining</text>
+    <path d="M 425 222 L 447 222" stroke="#6b7c76" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <rect x="450" y="200" width="112" height="44" rx="10" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="506.0" y="227.0" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">Alien</text>
+    <text x="150" y="299" fill="#173b36" font-size="17" font-weight="700" text-anchor="end">User C</text>
+    <rect x="170" y="270" width="112" height="44" rx="10" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="226.0" y="297.0" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">Star Wars</text>
+    <path d="M 285 292 L 307 292" stroke="#6b7c76" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <rect x="310" y="270" width="112" height="44" rx="10" fill="#357b6c" stroke="none"/>
+    <text x="366.0" y="297.0" fill="#ffffff" font-size="15" font-weight="700" text-anchor="middle">Carrie</text>
+    <path d="M 425 292 L 447 292" stroke="#6b7c76" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    <rect x="450" y="270" width="112" height="44" rx="10" fill="#357b6c" stroke="none"/>
+    <text x="506.0" y="297.0" fill="#ffffff" font-size="15" font-weight="700" text-anchor="middle">The Omen</text>
+    <text x="760" y="160" fill="#6b7c76" font-size="15">Every time someone likes two films</text>
+    <text x="760" y="182" fill="#6b7c76" font-size="15">in a row, we add 1 to the pair.</text>
+    <text x="760" y="232" fill="#173b36" font-size="17" font-weight="700">After Carrie:</text>
+    <text x="760" y="262" fill="#167768" font-size="17" font-weight="700">The Shining   2</text>
+    <text x="760" y="290" fill="#167768" font-size="17" font-weight="700">The Omen        1</text>
+  </g>
+</svg>
