@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 420" role="img" aria-labelledby="title desc">
+  <title id="title">Films liked together</title>
+  <desc id="desc">A likes table with five users. Psycho and The Birds were liked by the same users A, B and D, so they are similar. Toy Story was liked by users C, D and E.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#183a32" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="1100" height="420" rx="24" fill="#eaf1ed"/>
+  <rect x="24" y="24" width="1052" height="372" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+  <g font-family="Avenir Next, Trebuchet MS, sans-serif">
+    <text x="58" y="68" fill="#173b36" font-size="23" font-weight="700">Two films are similar when the same people liked them</text>
+    <text x="58" y="92" fill="#6b7c76" font-size="13">Same table, read by column</text>
+    <g font-size="14" fill="#6b7c76" text-anchor="middle">
+      <text x="245.0" y="136">Psycho</text>
+      <text x="355.0" y="136">The Birds</text>
+      <text x="465.0" y="136">Toy Story</text>
+    </g>
+    <text x="184" y="176" fill="#173b36" font-size="17" font-weight="700" text-anchor="end">User A</text>
+    <rect x="200" y="150" width="90" height="36" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="245.0" y="174" fill="#ffffff" font-size="17" font-weight="700" text-anchor="middle">1</text>
+    <rect x="310" y="150" width="90" height="36" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="355.0" y="174" fill="#ffffff" font-size="17" font-weight="700" text-anchor="middle">1</text>
+    <rect x="420" y="150" width="90" height="36" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="465.0" y="174" fill="#82908a" font-size="17" font-weight="700" text-anchor="middle">0</text>
+    <text x="184" y="220" fill="#173b36" font-size="17" font-weight="700" text-anchor="end">User B</text>
+    <rect x="200" y="194" width="90" height="36" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="245.0" y="218" fill="#ffffff" font-size="17" font-weight="700" text-anchor="middle">1</text>
+    <rect x="310" y="194" width="90" height="36" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="355.0" y="218" fill="#ffffff" font-size="17" font-weight="700" text-anchor="middle">1</text>
+    <rect x="420" y="194" width="90" height="36" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="465.0" y="218" fill="#82908a" font-size="17" font-weight="700" text-anchor="middle">0</text>
+    <text x="184" y="264" fill="#173b36" font-size="17" font-weight="700" text-anchor="end">User C</text>
+    <rect x="200" y="238" width="90" height="36" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="245.0" y="262" fill="#82908a" font-size="17" font-weight="700" text-anchor="middle">0</text>
+    <rect x="310" y="238" width="90" height="36" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="355.0" y="262" fill="#82908a" font-size="17" font-weight="700" text-anchor="middle">0</text>
+    <rect x="420" y="238" width="90" height="36" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="465.0" y="262" fill="#ffffff" font-size="17" font-weight="700" text-anchor="middle">1</text>
+    <text x="184" y="308" fill="#173b36" font-size="17" font-weight="700" text-anchor="end">User D</text>
+    <rect x="200" y="282" width="90" height="36" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="245.0" y="306" fill="#ffffff" font-size="17" font-weight="700" text-anchor="middle">1</text>
+    <rect x="310" y="282" width="90" height="36" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="355.0" y="306" fill="#ffffff" font-size="17" font-weight="700" text-anchor="middle">1</text>
+    <rect x="420" y="282" width="90" height="36" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="465.0" y="306" fill="#ffffff" font-size="17" font-weight="700" text-anchor="middle">1</text>
+    <text x="184" y="352" fill="#173b36" font-size="17" font-weight="700" text-anchor="end">User E</text>
+    <rect x="200" y="326" width="90" height="36" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="245.0" y="350" fill="#82908a" font-size="17" font-weight="700" text-anchor="middle">0</text>
+    <rect x="310" y="326" width="90" height="36" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="355.0" y="350" fill="#82908a" font-size="17" font-weight="700" text-anchor="middle">0</text>
+    <rect x="420" y="326" width="90" height="36" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="465.0" y="350" fill="#ffffff" font-size="17" font-weight="700" text-anchor="middle">1</text>
+    <rect x="192" y="142" width="216" height="224" rx="10" fill="none" stroke="#167768" stroke-width="2" stroke-dasharray="6 5"/>
+    <text x="560" y="190" fill="#6b7c76" font-size="15">Psycho and The Birds have the same audience:</text>
+    <text x="560" y="212" fill="#6b7c76" font-size="15">the same users liked them. They are similar.</text>
+    <text x="560" y="260" fill="#6b7c76" font-size="15">Toy Story has another audience.</text>
+    <text x="560" y="330" fill="#173b36" font-size="16">This time, we compare the columns.</text>
+  </g>
+</svg>

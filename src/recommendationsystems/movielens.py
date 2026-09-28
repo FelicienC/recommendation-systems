@@ -1,4 +1,4 @@
-"""Load the MovieLens 100K dataset for the content-based recommendation example.
+"""Load the MovieLens 100K dataset for the MovieLens chapters.
 
 The dataset is provided by the GroupLens research group:
 https://grouplens.org/datasets/movielens/100k/
@@ -11,7 +11,7 @@ from pathlib import Path
 import numpy as np
 
 DATASET_URL = "https://files.grouplens.org/datasets/movielens/ml-100k.zip"
-DATASET_DIR = Path(".cache/ml-100k")
+DATASET_DIR = Path(__file__).parent / ".cache/ml-100k"
 
 UserId = int
 MovieId = int  # a film is identified by its row index

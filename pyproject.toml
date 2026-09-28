@@ -68,7 +68,7 @@ quote-style = "double"
 indent-style = "space"
 
 [tool.deptry]
-known_first_party = ["movielens", "simulated_user"]
+known_first_party = ["recommendationsystems", "simulated_user"]
 extend_exclude = ["scripts"]
 
 [tool.pytest.ini_options]
