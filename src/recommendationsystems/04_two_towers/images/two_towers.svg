@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 440" role="img" aria-labelledby="title desc">
+  <title id="title">Two towers</title>
+  <desc id="desc">The user tower turns what we know about user 366 (the films they liked, their age, gender and occupation) into a vector. The film tower turns what we know about The Shining (its number and its genres) into a vector. The dot product of the two vectors gives the score: 1.19.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#183a32" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6b7c76"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="440" rx="24" fill="#eaf1ed"/>
+  <rect x="24" y="24" width="1052" height="392" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+  <g font-family="Avenir Next, Trebuchet MS, sans-serif">
+    <text x="58" y="68" fill="#173b36" font-size="23" font-weight="700">Two towers: one for the users, one for the films</text>
+    <text x="58" y="92" fill="#6b7c76" font-size="13">Each tower turns what we know into a vector, and the dot product of the two vectors gives the score</text>
+    <rect x="58" y="135" width="270" height="80" rx="10" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="74" y="161" fill="#173b36" font-size="17" font-weight="700" text-anchor="start">User 366</text>
+    <text x="74" y="183" fill="#6b7c76" font-size="14" text-anchor="start">Liked: Psycho, Evil Dead II…</text>
+    <text x="74" y="203" fill="#6b7c76" font-size="14" text-anchor="start">20 years old, F, student</text>
+    <line x1="328" y1="175" x2="366" y2="175" stroke="#6b7c76" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="370" y="147" width="150" height="56" rx="10" fill="#167768"/>
+    <text x="445" y="181" fill="#ffffff" font-size="17" font-weight="700" text-anchor="middle">User tower</text>
+    <line x1="520" y1="175" x2="558" y2="175" stroke="#6b7c76" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="562" y="157" width="50" height="36" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="587.0" y="181.0" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">0.9</text>
+    <rect x="618" y="157" width="50" height="36" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="643.0" y="181.0" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">-0.3</text>
+    <rect x="674" y="157" width="50" height="36" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="699.0" y="181.0" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">0.6</text>
+    <rect x="730" y="157" width="50" height="36" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="755.0" y="181.0" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">0.1</text>
+    <text x="697" y="213" fill="#6b7c76" font-size="13" text-anchor="middle">vector (32 numbers)</text>
+    <rect x="58" y="255" width="270" height="80" rx="10" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="74" y="281" fill="#173b36" font-size="17" font-weight="700" text-anchor="start">The Shining</text>
+    <text x="74" y="303" fill="#6b7c76" font-size="14" text-anchor="start">Film number 199</text>
+    <text x="74" y="323" fill="#6b7c76" font-size="14" text-anchor="start">Genres: Horror</text>
+    <line x1="328" y1="295" x2="366" y2="295" stroke="#6b7c76" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="370" y="267" width="150" height="56" rx="10" fill="#167768"/>
+    <text x="445" y="301" fill="#ffffff" font-size="17" font-weight="700" text-anchor="middle">Film tower</text>
+    <line x1="520" y1="295" x2="558" y2="295" stroke="#6b7c76" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="562" y="277" width="50" height="36" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="587.0" y="301.0" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">0.8</text>
+    <rect x="618" y="277" width="50" height="36" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="643.0" y="301.0" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">-0.1</text>
+    <rect x="674" y="277" width="50" height="36" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="699.0" y="301.0" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">0.7</text>
+    <rect x="730" y="277" width="50" height="36" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="755.0" y="301.0" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">0.2</text>
+    <text x="697" y="333" fill="#6b7c76" font-size="13" text-anchor="middle">vector (32 numbers)</text>
+    <line x1="790" y1="175" x2="846" y2="222" stroke="#6b7c76" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="790" y1="295" x2="846" y2="248" stroke="#6b7c76" stroke-width="2" marker-end="url(#arrow)"/>
+    <circle cx="872" cy="235" r="28" fill="#fff4d6" stroke="#dce6e1"/>
+    <text x="872" y="243" fill="#9a6b00" font-size="30" font-weight="700" text-anchor="middle">·</text>
+    <text x="872" y="285" fill="#6b7c76" font-size="13" text-anchor="middle">dot product</text>
+    <line x1="900" y1="235" x2="944" y2="235" stroke="#6b7c76" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="948" y="205" width="100" height="60" rx="10" fill="#fff4d6" stroke="#dce6e1"/>
+    <text x="998" y="229" fill="#9a6b00" font-size="13" text-anchor="middle">Score</text>
+    <text x="998" y="253" fill="#9a6b00" font-size="20" font-weight="700" text-anchor="middle">1.19</text>
+    <text x="58" y="378" fill="#173b36" font-size="16" text-anchor="start">0.9 × 0.8 + (−0.3) × (−0.1) + 0.6 × 0.7 + 0.1 × 0.2 = 1.19</text>
+    <text x="58" y="402" fill="#167768" font-size="16" text-anchor="start">The two vectors point the same way, so the score is high: let's recommend The Shining!</text>
+  </g>
+</svg>

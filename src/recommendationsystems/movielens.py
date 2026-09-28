@@ -45,6 +45,14 @@ def load_movies() -> tuple[list[str], list[str], np.ndarray]:
     return genre_names, titles, genres
 
 
+def load_users() -> dict[UserId, tuple[int, str, str]]:
+    """Return the age, gender and occupation of every user."""
+    _download()
+    rows = (DATASET_DIR / "u.user").read_text(encoding="latin-1").splitlines()
+    rows = [row.split("|") for row in rows]
+    return {int(row[0]): (int(row[1]), row[2], row[3]) for row in rows}
+
+
 def load_ratings() -> np.ndarray:
     """Return one `(user, movie, rating)` row per rating, sorted by time."""
     _download()

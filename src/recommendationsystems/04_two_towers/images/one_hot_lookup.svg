@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 440" role="img" aria-labelledby="title desc">
+  <title id="title">One-hot lookup</title>
+  <desc id="desc">The one-hot vector of user 2 is 0, 0, 1, 0, 0. Multiplied by the table of weights, which has one row per user, the single 1 picks the third row: 0.9, -0.3, 0.6, 0.1. This row is the vector of user 2.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#183a32" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6b7c76"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="440" rx="24" fill="#eaf1ed"/>
+  <rect x="24" y="24" width="1052" height="392" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+  <g font-family="Avenir Next, Trebuchet MS, sans-serif">
+    <text x="58" y="68" fill="#173b36" font-size="23" font-weight="700">A one-hot vector picks one row of the table</text>
+    <text x="58" y="92" fill="#6b7c76" font-size="13">Everything is multiplied by 0, except the row of the user</text>
+    <rect x="78" y="130" width="44" height="32" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="100.0" y="152.0" fill="#82908a" font-size="16" font-weight="700" text-anchor="middle">0</text>
+    <rect x="290" y="130" width="62" height="32" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="321.0" y="152.0" fill="#82908a" font-size="16" font-weight="700" text-anchor="middle">0.2</text>
+    <rect x="358" y="130" width="62" height="32" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="389.0" y="152.0" fill="#82908a" font-size="16" font-weight="700" text-anchor="middle">0.5</text>
+    <rect x="426" y="130" width="62" height="32" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="457.0" y="152.0" fill="#82908a" font-size="16" font-weight="700" text-anchor="middle">-0.4</text>
+    <rect x="494" y="130" width="62" height="32" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="525.0" y="152.0" fill="#82908a" font-size="16" font-weight="700" text-anchor="middle">0.3</text>
+    <text x="566" y="152" fill="#6b7c76" font-size="14" text-anchor="start">user 0</text>
+    <rect x="78" y="170" width="44" height="32" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="100.0" y="192.0" fill="#82908a" font-size="16" font-weight="700" text-anchor="middle">0</text>
+    <rect x="290" y="170" width="62" height="32" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="321.0" y="192.0" fill="#82908a" font-size="16" font-weight="700" text-anchor="middle">-0.6</text>
+    <rect x="358" y="170" width="62" height="32" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="389.0" y="192.0" fill="#82908a" font-size="16" font-weight="700" text-anchor="middle">0.1</text>
+    <rect x="426" y="170" width="62" height="32" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="457.0" y="192.0" fill="#82908a" font-size="16" font-weight="700" text-anchor="middle">0.2</text>
+    <rect x="494" y="170" width="62" height="32" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="525.0" y="192.0" fill="#82908a" font-size="16" font-weight="700" text-anchor="middle">0.8</text>
+    <text x="566" y="192" fill="#6b7c76" font-size="14" text-anchor="start">user 1</text>
+    <rect x="78" y="210" width="44" height="32" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="100.0" y="232.0" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">1</text>
+    <rect x="290" y="210" width="62" height="32" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="321.0" y="232.0" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">0.9</text>
+    <rect x="358" y="210" width="62" height="32" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="389.0" y="232.0" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">-0.3</text>
+    <rect x="426" y="210" width="62" height="32" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="457.0" y="232.0" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">0.6</text>
+    <rect x="494" y="210" width="62" height="32" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="525.0" y="232.0" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">0.1</text>
+    <text x="566" y="232" fill="#167768" font-size="14" font-weight="700" text-anchor="start">user 2</text>
+    <rect x="78" y="250" width="44" height="32" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="100.0" y="272.0" fill="#82908a" font-size="16" font-weight="700" text-anchor="middle">0</text>
+    <rect x="290" y="250" width="62" height="32" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="321.0" y="272.0" fill="#82908a" font-size="16" font-weight="700" text-anchor="middle">0.0</text>
+    <rect x="358" y="250" width="62" height="32" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="389.0" y="272.0" fill="#82908a" font-size="16" font-weight="700" text-anchor="middle">0.7</text>
+    <rect x="426" y="250" width="62" height="32" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="457.0" y="272.0" fill="#82908a" font-size="16" font-weight="700" text-anchor="middle">-0.2</text>
+    <rect x="494" y="250" width="62" height="32" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="525.0" y="272.0" fill="#82908a" font-size="16" font-weight="700" text-anchor="middle">-0.5</text>
+    <text x="566" y="272" fill="#6b7c76" font-size="14" text-anchor="start">user 3</text>
+    <rect x="78" y="290" width="44" height="32" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="100.0" y="312.0" fill="#82908a" font-size="16" font-weight="700" text-anchor="middle">0</text>
+    <rect x="290" y="290" width="62" height="32" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="321.0" y="312.0" fill="#82908a" font-size="16" font-weight="700" text-anchor="middle">0.4</text>
+    <rect x="358" y="290" width="62" height="32" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="389.0" y="312.0" fill="#82908a" font-size="16" font-weight="700" text-anchor="middle">-0.8</text>
+    <rect x="426" y="290" width="62" height="32" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="457.0" y="312.0" fill="#82908a" font-size="16" font-weight="700" text-anchor="middle">0.3</text>
+    <rect x="494" y="290" width="62" height="32" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="525.0" y="312.0" fill="#82908a" font-size="16" font-weight="700" text-anchor="middle">0.2</text>
+    <text x="566" y="312" fill="#6b7c76" font-size="14" text-anchor="start">user 4</text>
+    <text x="206" y="236" fill="#173b36" font-size="30" font-weight="700" text-anchor="middle">×</text>
+    <text x="690" y="236" fill="#173b36" font-size="30" font-weight="700" text-anchor="middle">=</text>
+    <rect x="740" y="210" width="62" height="32" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="771.0" y="232.0" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">0.9</text>
+    <rect x="808" y="210" width="62" height="32" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="839.0" y="232.0" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">-0.3</text>
+    <rect x="876" y="210" width="62" height="32" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="907.0" y="232.0" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">0.6</text>
+    <rect x="944" y="210" width="62" height="32" rx="6" fill="#357b6c" stroke="none"/>
+    <text x="975.0" y="232.0" fill="#ffffff" font-size="16" font-weight="700" text-anchor="middle">0.1</text>
+    <text x="100" y="348" fill="#6b7c76" font-size="14" text-anchor="middle">one-hot vector</text>
+    <text x="100" y="366" fill="#6b7c76" font-size="14" text-anchor="middle">of user 2</text>
+    <text x="422" y="348" fill="#6b7c76" font-size="14" text-anchor="middle">table of weights</text>
+    <text x="422" y="366" fill="#6b7c76" font-size="14" text-anchor="middle">(one row per user)</text>
+    <text x="871" y="348" fill="#6b7c76" font-size="14" text-anchor="middle">vector of user 2</text>
+    <rect x="282" y="202" width="336" height="48" rx="10" fill="none" stroke="#167768" stroke-width="2" stroke-dasharray="6 5"/>
+    <text x="58" y="410" fill="#167768" font-size="16" text-anchor="start">Learning the tower means learning this table: one vector per user.</text>
+  </g>
+</svg>
