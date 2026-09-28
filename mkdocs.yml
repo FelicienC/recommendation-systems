@@ -1,10 +1,38 @@
-site_name: PythonStarter
-site_description: A modern Python package starter
+site_name: Recommendation Systems
+site_description: Beginner-friendly guides to standard recommendation systems
 
-docs_dir: docs
+docs_dir: src/recommendationsystems
+use_directory_urls: false
+exclude_docs: |
+  *.py
+  __pycache__/
+
+nav:
+  - index.md
+  - 01 Contextual bandits: 01_bandits/01_bandits.ipynb
+  - 02 Content-based recommendations: 02_content_based/02_content_based.ipynb
+  - 03 Collaborative filtering: 03_collaborative_filtering/03_collaborative_filtering.ipynb
+  - 04 Two-tower recommendations: 04_two_towers/04_two_towers.ipynb
+  - 05 Sequential recommendations with self-attention: 05_sasrec/05_sasrec.ipynb
+  - "06 LightGCN: recommendations through a graph": 06_lightgcn/06_lightgcn.ipynb
+  - 07 Retrieval and ranking: 07_retrieval_ranking/07_retrieval_ranking.ipynb
 
 theme:
   name: readthedocs
 
-nav:
-  - Home: index.md
+plugins:
+  - search
+  - mkdocs-jupyter:
+      custom_mathjax_url: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS_CHTML-full,Safe
+      execute: false
+      ignore_h1_titles: true
+
+hooks:
+  - scripts/mkdocs_hooks.py
+
+watch:
+  - README.md
+  - scripts/mkdocs_hooks.py
+
+extra_javascript:
+  - js/mathjax-typeset.js
