@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 440" role="img" aria-labelledby="title desc">
+  <title id="title">Cosine similarity</title>
+  <desc id="desc">Keeping only two genres, Comedy and Horror, each film is an arrow. Toy Story points along Comedy, Psycho along Horror, Young Frankenstein between them. A 45 degree angle gives a similarity of 0.71, a 90 degree angle gives 0.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#183a32" flood-opacity="0.12"/>
+    </filter>
+    <marker id="axis" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 10 5 0 10z" fill="#b8c7c0"/>
+    </marker>
+    <marker id="green" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="12" refY="9" orient="auto">
+      <path d="M0 0 18 9 0 18z" fill="#357b6c"/>
+    </marker>
+    <marker id="orange" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="12" refY="9" orient="auto">
+      <path d="M0 0 18 9 0 18z" fill="#d9824f"/>
+    </marker>
+    <marker id="gold" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="12" refY="9" orient="auto">
+      <path d="M0 0 18 9 0 18z" fill="#d9a53a"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="440" rx="24" fill="#eaf1ed"/>
+  <rect x="24" y="24" width="1052" height="392" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+  <g font-family="Avenir Next, Trebuchet MS, sans-serif">
+    <text x="58" y="68" fill="#173b36" font-size="23" font-weight="700">Similar films point in the same direction</text>
+    <text x="58" y="92" fill="#6b7c76" font-size="13">Keeping only two genres, each film becomes an arrow</text>
+
+    <path d="M140 370h300" stroke="#b8c7c0" stroke-width="2" marker-end="url(#axis)"/>
+    <path d="M140 370V120" stroke="#b8c7c0" stroke-width="2" marker-end="url(#axis)"/>
+    <text x="446" y="396" fill="#6b7c76" font-size="14" text-anchor="end">Comedy</text>
+    <text x="128" y="128" fill="#6b7c76" font-size="14" text-anchor="end">Horror</text>
+
+    <path d="M168 370a28 28 0 0 0 -8 -20" fill="none" stroke="#d9a53a" stroke-width="2"/>
+    <path d="M200 370a60 60 0 0 0 -60 -60" fill="none" stroke="#d9824f" stroke-width="2" stroke-dasharray="4 4"/>
+
+    <path d="M140 370h192" stroke="#357b6c" stroke-width="4" stroke-linecap="round" marker-end="url(#green)"/>
+    <path d="M140 370 332 178" stroke="#d9a53a" stroke-width="4" stroke-linecap="round" marker-end="url(#gold)"/>
+    <path d="M140 370V178" stroke="#d9824f" stroke-width="4" stroke-linecap="round" marker-end="url(#orange)"/>
+
+    <g font-size="15" font-weight="700">
+      <text x="232" y="356" fill="#357b6c">Toy Story</text>
+      <text x="344" y="178" fill="#b8862a">Young Frankenstein</text>
+      <text x="152" y="176" fill="#c56a36">Psycho</text>
+    </g>
+
+    <g font-size="17">
+      <rect x="560" y="140" width="470" height="64" rx="12" fill="#f8faf8" stroke="#dce6e1"/>
+      <text x="584" y="168" fill="#173b36" font-weight="700">Toy Story vs Young Frankenstein</text>
+      <text x="584" y="192" fill="#6b7c76" font-size="14">angle 45°</text>
+      <text x="1006" y="182" fill="#167768" font-size="26" font-weight="700" text-anchor="end">0.71</text>
+
+      <rect x="560" y="220" width="470" height="64" rx="12" fill="#f8faf8" stroke="#dce6e1"/>
+      <text x="584" y="248" fill="#173b36" font-weight="700">Toy Story vs Psycho</text>
+      <text x="584" y="272" fill="#6b7c76" font-size="14">angle 90°: nothing in common</text>
+      <text x="1006" y="262" fill="#167768" font-size="26" font-weight="700" text-anchor="end">0.00</text>
+
+      <rect x="560" y="300" width="470" height="64" rx="12" fill="#f8faf8" stroke="#dce6e1"/>
+      <text x="584" y="328" fill="#173b36" font-weight="700">Toy Story vs Toy Story</text>
+      <text x="584" y="352" fill="#6b7c76" font-size="14">angle 0°: same direction</text>
+      <text x="1006" y="342" fill="#167768" font-size="26" font-weight="700" text-anchor="end">1.00</text>
+    </g>
+  </g>
+</svg>

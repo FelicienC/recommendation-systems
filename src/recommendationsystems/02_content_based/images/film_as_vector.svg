@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 380" role="img" aria-labelledby="title desc">
+  <title id="title">A film is a row of zeros and ones</title>
+  <desc id="desc">Toy Story is tagged Animation, Children's and Comedy. Its genre vector has 19 cells, one per genre, with a 1 in those three cells and a 0 everywhere else.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#183a32" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 10 5 0 10z" fill="#357b6c"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="380" rx="24" fill="#eaf1ed"/>
+  <rect x="24" y="24" width="1052" height="332" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+  <g font-family="Avenir Next, Trebuchet MS, sans-serif">
+    <text x="58" y="68" fill="#173b36" font-size="23" font-weight="700">A film is a row of zeros and ones</text>
+    <text x="58" y="92" fill="#6b7c76" font-size="13">One cell per genre: 1 if the film has the genre, 0 otherwise</text>
+
+    <rect x="58" y="120" width="200" height="200" rx="12" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="158" y="160" fill="#173b36" font-size="20" font-weight="700" text-anchor="middle">Toy Story</text>
+    <g font-size="13" font-weight="700" text-anchor="middle">
+      <rect x="88" y="186" width="140" height="30" rx="15" fill="#d8eeee"/>
+      <text x="158" y="206" fill="#167768">Animation</text>
+      <rect x="88" y="226" width="140" height="30" rx="15" fill="#dcefd9"/>
+      <text x="158" y="246" fill="#167768">Children's</text>
+      <rect x="88" y="266" width="140" height="30" rx="15" fill="#f8e0d4"/>
+      <text x="158" y="286" fill="#167768">Comedy</text>
+    </g>
+
+    <path d="M276 240h40" fill="none" stroke="#357b6c" stroke-linecap="round" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+    <g font-size="12" fill="#6b7c76">
+      <text transform="translate(341 206) rotate(-50)">unknown</text>
+      <text transform="translate(379 206) rotate(-50)">Action</text>
+      <text transform="translate(417 206) rotate(-50)">Adventure</text>
+      <text transform="translate(455 206) rotate(-50)" fill="#167768" font-weight="700">Animation</text>
+      <text transform="translate(493 206) rotate(-50)" fill="#167768" font-weight="700">Children's</text>
+      <text transform="translate(531 206) rotate(-50)" fill="#167768" font-weight="700">Comedy</text>
+      <text transform="translate(569 206) rotate(-50)">Crime</text>
+      <text transform="translate(607 206) rotate(-50)">Documentary</text>
+      <text transform="translate(645 206) rotate(-50)">Drama</text>
+      <text transform="translate(683 206) rotate(-50)">Fantasy</text>
+      <text transform="translate(721 206) rotate(-50)">Film-Noir</text>
+      <text transform="translate(759 206) rotate(-50)">Horror</text>
+      <text transform="translate(797 206) rotate(-50)">Musical</text>
+      <text transform="translate(835 206) rotate(-50)">Mystery</text>
+      <text transform="translate(873 206) rotate(-50)">Romance</text>
+      <text transform="translate(911 206) rotate(-50)">Sci-Fi</text>
+      <text transform="translate(949 206) rotate(-50)">Thriller</text>
+      <text transform="translate(987 206) rotate(-50)">War</text>
+      <text transform="translate(1025 206) rotate(-50)">Western</text>
+    </g>
+    <g>
+      <rect x="328" y="220" width="34" height="40" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+      <rect x="366" y="220" width="34" height="40" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+      <rect x="404" y="220" width="34" height="40" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+      <rect x="442" y="220" width="34" height="40" rx="6" fill="#357b6c"/>
+      <rect x="480" y="220" width="34" height="40" rx="6" fill="#357b6c"/>
+      <rect x="518" y="220" width="34" height="40" rx="6" fill="#357b6c"/>
+      <rect x="556" y="220" width="34" height="40" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+      <rect x="594" y="220" width="34" height="40" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+      <rect x="632" y="220" width="34" height="40" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+      <rect x="670" y="220" width="34" height="40" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+      <rect x="708" y="220" width="34" height="40" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+      <rect x="746" y="220" width="34" height="40" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+      <rect x="784" y="220" width="34" height="40" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+      <rect x="822" y="220" width="34" height="40" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+      <rect x="860" y="220" width="34" height="40" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+      <rect x="898" y="220" width="34" height="40" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+      <rect x="936" y="220" width="34" height="40" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+      <rect x="974" y="220" width="34" height="40" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+      <rect x="1012" y="220" width="34" height="40" rx="6" fill="#f8faf8" stroke="#dce6e1"/>
+    </g>
+    <g font-size="17" font-weight="700" text-anchor="middle">
+      <text x="345" y="246" fill="#82908a">0</text>
+      <text x="383" y="246" fill="#82908a">0</text>
+      <text x="421" y="246" fill="#82908a">0</text>
+      <text x="459" y="246" fill="#ffffff">1</text>
+      <text x="497" y="246" fill="#ffffff">1</text>
+      <text x="535" y="246" fill="#ffffff">1</text>
+      <text x="573" y="246" fill="#82908a">0</text>
+      <text x="611" y="246" fill="#82908a">0</text>
+      <text x="649" y="246" fill="#82908a">0</text>
+      <text x="687" y="246" fill="#82908a">0</text>
+      <text x="725" y="246" fill="#82908a">0</text>
+      <text x="763" y="246" fill="#82908a">0</text>
+      <text x="801" y="246" fill="#82908a">0</text>
+      <text x="839" y="246" fill="#82908a">0</text>
+      <text x="877" y="246" fill="#82908a">0</text>
+      <text x="915" y="246" fill="#82908a">0</text>
+      <text x="953" y="246" fill="#82908a">0</text>
+      <text x="991" y="246" fill="#82908a">0</text>
+      <text x="1029" y="246" fill="#82908a">0</text>
+    </g>
+  </g>
+</svg>

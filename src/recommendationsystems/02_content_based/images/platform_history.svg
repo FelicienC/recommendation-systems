@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 420" role="img" aria-labelledby="title desc">
+  <title id="title">What should I watch next?</title>
+  <desc id="desc">A viewer's history of rated films: Scream 5 stars, Psycho 5 stars, Evil Dead II 4 stars, Star Wars 2 stars. The platform must pick the next film.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#183a32" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 10 5 0 10z" fill="#357b6c"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="420" rx="24" fill="#eaf1ed"/>
+  <rect x="24" y="24" width="1052" height="372" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+  <g font-family="Avenir Next, Trebuchet MS, sans-serif">
+    <text x="64" y="72" fill="#173b36" font-size="23" font-weight="700">Your history</text>
+    <text x="64" y="96" fill="#6b7c76" font-size="13">Films you already rated</text>
+
+    <g fill="#f8faf8" stroke="#dce6e1">
+      <rect x="64" y="116" width="440" height="56" rx="10"/>
+      <rect x="64" y="182" width="440" height="56" rx="10"/>
+      <rect x="64" y="248" width="440" height="56" rx="10"/>
+      <rect x="64" y="314" width="440" height="56" rx="10"/>
+    </g>
+    <g fill="#173b36" font-size="17" font-weight="700">
+      <text x="88" y="150">Scream</text>
+      <text x="88" y="216">Psycho</text>
+      <text x="88" y="282">Evil Dead II</text>
+      <text x="88" y="348">Star Wars</text>
+    </g>
+    <g font-size="22" text-anchor="end">
+      <text x="480" y="152" fill="#f0bd54">★★★★★</text>
+      <text x="480" y="218" fill="#f0bd54">★★★★★</text>
+      <text x="480" y="284"><tspan fill="#f0bd54">★★★★</tspan><tspan fill="#dce6e1">★</tspan></text>
+      <text x="480" y="350"><tspan fill="#f0bd54">★★</tspan><tspan fill="#dce6e1">★★★</tspan></text>
+    </g>
+
+    <path d="M540 243h110" fill="none" stroke="#357b6c" stroke-linecap="round" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+    <rect x="690" y="116" width="340" height="254" rx="12" fill="#d8eeee"/>
+    <circle cx="860" cy="220" r="62" fill="#ffffff"/>
+    <text x="860" y="248" fill="#167768" font-size="80" font-weight="700" text-anchor="middle">?</text>
+    <text x="860" y="330" fill="#173b36" font-size="20" font-weight="700" text-anchor="middle">What should I watch next?</text>
+  </g>
+</svg>

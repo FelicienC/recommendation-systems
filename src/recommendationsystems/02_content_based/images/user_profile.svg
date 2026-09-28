@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 440" role="img" aria-labelledby="title desc">
+  <title id="title">Building a user profile</title>
+  <desc id="desc">Three liked films, simplified to four genres: Scream is Horror; Evil Dead II is Comedy and Horror; Army of Darkness is Comedy, Horror and Sci-Fi. Their average gives the profile: Comedy 0.67, Horror 1, Sci-Fi 0.33, Drama 0.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#183a32" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="1100" height="440" rx="24" fill="#eaf1ed"/>
+  <rect x="24" y="24" width="1052" height="392" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+  <g font-family="Avenir Next, Trebuchet MS, sans-serif">
+    <text x="58" y="68" fill="#173b36" font-size="23" font-weight="700">Your profile is the average of the films you liked</text>
+    <text x="58" y="92" fill="#6b7c76" font-size="13">Simplified to four genres</text>
+
+    <g font-size="14" fill="#6b7c76" text-anchor="middle">
+      <text x="484" y="134">Comedy</text>
+      <text x="584" y="134">Horror</text>
+      <text x="684" y="134">Sci-Fi</text>
+      <text x="784" y="134">Drama</text>
+    </g>
+
+    <g font-size="17" font-weight="700" fill="#173b36" text-anchor="end">
+      <text x="420" y="176">Scream</text>
+      <text x="420" y="232">Evil Dead II</text>
+      <text x="420" y="288">Army of Darkness</text>
+    </g>
+
+    <g stroke="#dce6e1">
+      <rect x="444" y="150" width="80" height="40" rx="6" fill="#f8faf8"/>
+      <rect x="544" y="150" width="80" height="40" rx="6" fill="#357b6c" stroke="none"/>
+      <rect x="644" y="150" width="80" height="40" rx="6" fill="#f8faf8"/>
+      <rect x="744" y="150" width="80" height="40" rx="6" fill="#f8faf8"/>
+
+      <rect x="444" y="206" width="80" height="40" rx="6" fill="#357b6c" stroke="none"/>
+      <rect x="544" y="206" width="80" height="40" rx="6" fill="#357b6c" stroke="none"/>
+      <rect x="644" y="206" width="80" height="40" rx="6" fill="#f8faf8"/>
+      <rect x="744" y="206" width="80" height="40" rx="6" fill="#f8faf8"/>
+
+      <rect x="444" y="262" width="80" height="40" rx="6" fill="#357b6c" stroke="none"/>
+      <rect x="544" y="262" width="80" height="40" rx="6" fill="#357b6c" stroke="none"/>
+      <rect x="644" y="262" width="80" height="40" rx="6" fill="#357b6c" stroke="none"/>
+      <rect x="744" y="262" width="80" height="40" rx="6" fill="#f8faf8"/>
+    </g>
+    <g font-size="17" font-weight="700" text-anchor="middle">
+      <text x="484" y="176" fill="#82908a">0</text><text x="584" y="176" fill="#ffffff">1</text><text x="684" y="176" fill="#82908a">0</text><text x="784" y="176" fill="#82908a">0</text>
+      <text x="484" y="232" fill="#ffffff">1</text><text x="584" y="232" fill="#ffffff">1</text><text x="684" y="232" fill="#82908a">0</text><text x="784" y="232" fill="#82908a">0</text>
+      <text x="484" y="288" fill="#ffffff">1</text><text x="584" y="288" fill="#ffffff">1</text><text x="684" y="288" fill="#ffffff">1</text><text x="784" y="288" fill="#82908a">0</text>
+    </g>
+
+    <path d="M444 322h380" stroke="#173b36" stroke-width="2"/>
+    <text x="420" y="366" fill="#167768" font-size="19" font-weight="700" text-anchor="end">Your profile</text>
+    <g stroke="#dce6e1">
+      <rect x="444" y="340" width="80" height="40" rx="6" fill="#357b6c" fill-opacity="0.67"/>
+      <rect x="544" y="340" width="80" height="40" rx="6" fill="#357b6c"/>
+      <rect x="644" y="340" width="80" height="40" rx="6" fill="#357b6c" fill-opacity="0.33"/>
+      <rect x="744" y="340" width="80" height="40" rx="6" fill="#f8faf8"/>
+    </g>
+    <g font-size="17" font-weight="700" text-anchor="middle">
+      <text x="484" y="366" fill="#ffffff">0.67</text>
+      <text x="584" y="366" fill="#ffffff">1</text>
+      <text x="684" y="366" fill="#173b36">0.33</text>
+      <text x="784" y="366" fill="#82908a">0</text>
+    </g>
+
+    <text x="860" y="230" fill="#6b7c76" font-size="15">Loves horror,</text>
+    <text x="860" y="252" fill="#6b7c76" font-size="15">likes a laugh,</text>
+    <text x="860" y="274" fill="#6b7c76" font-size="15">no drama.</text>
+  </g>
+</svg>
