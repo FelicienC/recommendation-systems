@@ -20,5 +20,5 @@ docs-serve:
 	$(UV) run mkdocs serve
 
 clean:
-	rm -rf .venv .pytest_cache .ruff_cache .ty_cache build dist *.egg-info
+	rm -rf .venv .ruff_cache .ty_cache build dist *.egg-info
 	find . -type d -name __pycache__ -prune -exec rm -rf {} +

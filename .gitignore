@@ -9,13 +9,8 @@ wheels/
 # Virtual environments
 .venv
 
-# Test coverage
-.coverage
-htmlcov/
-
 # MkDocs generated site
 site/
 
 .ruff_cache
-.pytest_cache
 .cache/
