@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" role="img" aria-labelledby="title desc">
+  <title id="title">One step back in time</title>
+  <desc id="desc">The ratings of one user, in time order. For the test, the recommender sees the history and we check the last 10 ratings. To train the ranker, we hide 10 more ratings: the ranker sees the earlier history and learns from the 10 ratings just before the test ones. The test ratings are never used.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#183a32" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="1100" height="360" rx="24" fill="#eaf1ed"/>
+  <rect x="24" y="24" width="1052" height="312" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+  <g font-family="Avenir Next, Trebuchet MS, sans-serif">
+    <text x="58" y="68" fill="#173b36" font-size="23" font-weight="700">One step back in time</text>
+    <text x="58" y="92" fill="#6b7c76" font-size="13">The ratings of one user, from the oldest to the most recent</text>
+
+    <text x="280" y="176" fill="#173b36" font-size="17" font-weight="700" text-anchor="end">Test</text>
+    <rect x="300" y="150" width="540" height="40" rx="8" fill="#357b6c"/>
+    <text x="570" y="176" fill="#ffffff" font-size="15" font-weight="700" text-anchor="middle">history</text>
+    <rect x="850" y="150" width="180" height="40" rx="8" fill="#f8e0d4" stroke="#e76f51"/>
+    <text x="940" y="176" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">last 10: the test</text>
+
+    <text x="280" y="256" fill="#173b36" font-size="17" font-weight="700" text-anchor="end">Training the ranker</text>
+    <rect x="300" y="230" width="350" height="40" rx="8" fill="#357b6c"/>
+    <text x="475" y="256" fill="#ffffff" font-size="15" font-weight="700" text-anchor="middle">earlier history</text>
+    <rect x="660" y="230" width="180" height="40" rx="8" fill="#f8e0d4" stroke="#e76f51"/>
+    <text x="750" y="256" fill="#173b36" font-size="15" font-weight="700" text-anchor="middle">10 to learn from</text>
+    <rect x="850" y="230" width="180" height="40" rx="8" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="940" y="256" fill="#82908a" font-size="15" font-weight="700" text-anchor="middle">never used</text>
+
+    <text x="300" y="306" fill="#6b7c76" font-size="13">Same setup as the test, 10 ratings earlier: the ranker never sees the answers of the test.</text>
+  </g>
+</svg>

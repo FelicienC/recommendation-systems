@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 400" role="img" aria-labelledby="title desc">
+  <title id="title">Retrieval and ranking</title>
+  <desc id="desc">Out of all the films, three fast recommenders each bring out their best films: popular films, genres and nearest neighbors. Together, they build a short list of candidates. A ranker sorts the candidates, and we show the first 10.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#183a32" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6b7c76"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="400" rx="24" fill="#eaf1ed"/>
+  <rect x="24" y="24" width="1052" height="352" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+  <g font-family="Avenir Next, Trebuchet MS, sans-serif">
+    <text x="58" y="68" fill="#173b36" font-size="23" font-weight="700">Cast a wide net quickly, then sort the catch carefully</text>
+    <text x="58" y="92" fill="#6b7c76" font-size="13">Retrieval keeps a few hundred films, ranking puts the best ones first</text>
+
+    <g font-size="14" fill="#6b7c76" text-anchor="middle">
+      <text x="365" y="136">Retrieval: fast</text>
+      <text x="805" y="136">Ranking: careful</text>
+    </g>
+
+    <!-- all films -->
+    <rect x="58" y="160" width="150" height="160" rx="12" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="133" y="232" fill="#173b36" font-size="18" font-weight="700" text-anchor="middle">All films</text>
+    <text x="133" y="256" fill="#6b7c76" font-size="14" text-anchor="middle">1,682</text>
+
+    <!-- sources -->
+    <g font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">
+      <rect x="290" y="160" width="150" height="44" rx="8" fill="#357b6c"/>
+      <text x="365" y="188">Popular</text>
+      <rect x="290" y="218" width="150" height="44" rx="8" fill="#357b6c"/>
+      <text x="365" y="246">Genres</text>
+      <rect x="290" y="276" width="150" height="44" rx="8" fill="#357b6c"/>
+      <text x="365" y="304">Neighbors</text>
+    </g>
+    <text x="365" y="345" fill="#6b7c76" font-size="13" text-anchor="middle">100 films each</text>
+
+    <!-- candidates -->
+    <rect x="520" y="185" width="150" height="110" rx="12" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="595" y="234" fill="#173b36" font-size="18" font-weight="700" text-anchor="middle">Candidates</text>
+    <text x="595" y="258" fill="#6b7c76" font-size="14" text-anchor="middle">a few hundred</text>
+
+    <!-- ranker -->
+    <rect x="730" y="185" width="150" height="110" rx="12" fill="#f8e0d4" stroke="#e76f51"/>
+    <text x="805" y="234" fill="#173b36" font-size="18" font-weight="700" text-anchor="middle">Ranker</text>
+    <text x="805" y="258" fill="#6b7c76" font-size="14" text-anchor="middle">sorts them</text>
+
+    <!-- top 10 -->
+    <rect x="940" y="200" width="100" height="80" rx="12" fill="#357b6c"/>
+    <text x="990" y="247" fill="#ffffff" font-size="18" font-weight="700" text-anchor="middle">Top 10</text>
+
+    <g stroke="#6b7c76" stroke-width="2" fill="none" marker-end="url(#arrow)">
+      <line x1="212" y1="220" x2="284" y2="184"/>
+      <line x1="212" y1="240" x2="284" y2="240"/>
+      <line x1="212" y1="260" x2="284" y2="296"/>
+      <line x1="444" y1="184" x2="514" y2="220"/>
+      <line x1="444" y1="240" x2="514" y2="240"/>
+      <line x1="444" y1="296" x2="514" y2="260"/>
+      <line x1="674" y1="240" x2="724" y2="240"/>
+      <line x1="884" y1="240" x2="934" y2="240"/>
+    </g>
+  </g>
+</svg>
