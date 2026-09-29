@@ -58,7 +58,7 @@ ignore = [
 
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = ["D104"]
-"src/recommendationsystems/01_bandits/simulated_user.py" = ["S311"]
+"src/recommendationsystems/01_bandits/simulated_user.py" = ["INP001", "S311"]
 
 [tool.ruff.format]
 quote-style = "double"
@@ -75,3 +75,11 @@ root = ["src"]
 check-hidden = true
 ignore-regex = "\\\"image/png\\\": \\\"[A-Za-z0-9+/=]+\\\""
 skip = "./.git,./.venv,./uv.lock"
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]

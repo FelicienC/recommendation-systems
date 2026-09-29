@@ -1,1 +1,0 @@
-"""Collaborative filtering recommendation example."""

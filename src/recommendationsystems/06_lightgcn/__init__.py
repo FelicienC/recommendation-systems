@@ -1,1 +1,0 @@
-"""LightGCN recommendation example."""

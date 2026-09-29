@@ -2,6 +2,10 @@
 
 Recommendation systems are behind many of the things we use every day. In this repository, we build small Python simulations to understand how they work, one idea at a time. No black box and no magic: just data, intuition, and a bit of code :)
 
+Read it online: https://felicienc.github.io/recommendation-systems/
+
+Or run the notebooks locally: install [uv](https://docs.astral.sh/uv/), run `make init`, then open any notebook with the `.venv` kernel (VS Code works out of the box).
+
 ## Introduction
 
 ### What is a recommendation system?
