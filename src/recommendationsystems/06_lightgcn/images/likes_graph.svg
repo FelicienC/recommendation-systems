@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 420" role="img" aria-labelledby="title desc">
+  <title id="title">A walk in the likes graph</title>
+  <desc id="desc">Users on the left, films on the right, and a line for every like. Zoom on you and user A. You both liked Psycho and The Birds. A also liked The Shining. Three steps lead from you to The Shining: you, Psycho, A, The Shining.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#183a32" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="1100" height="420" rx="24" fill="#eaf1ed"/>
+  <rect x="24" y="24" width="1052" height="372" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+  <g font-family="Avenir Next, Trebuchet MS, sans-serif">
+    <text x="58" y="68" fill="#173b36" font-size="23" font-weight="700">Zoom on you and A: a walk of three steps</text>
+    <text x="58" y="92" fill="#6b7c76" font-size="13">Three steps along the lines lead from you to a film you have not seen</text>
+    <g font-size="14" fill="#6b7c76" text-anchor="middle">
+      <text x="260" y="130">Users</text>
+      <text x="640" y="130">Films</text>
+    </g>
+    <!-- every like -->
+    <g stroke="#dce6e1" stroke-width="4">
+      <line x1="260" y1="210" x2="640" y2="170"/>
+      <line x1="260" y1="210" x2="640" y2="255"/>
+      <line x1="260" y1="320" x2="640" y2="170"/>
+      <line x1="260" y1="320" x2="640" y2="255"/>
+      <line x1="260" y1="320" x2="640" y2="340"/>
+    </g>
+    <!-- the walk -->
+    <g stroke="#e76f51" stroke-width="4">
+      <line x1="260" y1="210" x2="640" y2="170"/>
+      <line x1="260" y1="320" x2="640" y2="170"/>
+      <line x1="260" y1="320" x2="640" y2="340"/>
+    </g>
+    <g font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">
+      <circle cx="450" cy="190" r="13" fill="#e76f51"/>
+      <text x="450" y="195">1</text>
+      <circle cx="420" cy="257" r="13" fill="#e76f51"/>
+      <text x="420" y="262">2</text>
+      <circle cx="450" cy="330" r="13" fill="#e76f51"/>
+      <text x="450" y="335">3</text>
+    </g>
+    <!-- users -->
+    <circle cx="260" cy="210" r="24" fill="#357b6c"/>
+    <text x="222" y="216" fill="#173b36" font-size="17" font-weight="700" text-anchor="end">You</text>
+    <circle cx="260" cy="320" r="24" fill="#357b6c"/>
+    <text x="222" y="326" fill="#173b36" font-size="17" font-weight="700" text-anchor="end">A</text>
+    <!-- films -->
+    <rect x="610" y="152" width="140" height="36" rx="8" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="680" y="176" fill="#173b36" font-size="16" font-weight="700" text-anchor="middle">Psycho</text>
+    <rect x="610" y="237" width="140" height="36" rx="8" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="680" y="261" fill="#173b36" font-size="16" font-weight="700" text-anchor="middle">The Birds</text>
+    <rect x="610" y="322" width="140" height="36" rx="8" fill="#f8e0d4" stroke="#e76f51"/>
+    <text x="680" y="346" fill="#173b36" font-size="16" font-weight="700" text-anchor="middle">The Shining</text>
+    <!-- explanation -->
+    <g font-size="15">
+      <text x="800" y="180" fill="#6b7c76">1. You liked Psycho.</text>
+      <text x="800" y="222" fill="#6b7c76">2. A liked it too.</text>
+      <text x="800" y="264" fill="#6b7c76">3. A also liked The Shining,</text>
+      <text x="800" y="286" fill="#6b7c76">which you have not seen.</text>
+      <text x="800" y="340" fill="#173b36" font-weight="700">Let's recommend it!</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 400" role="img" aria-labelledby="title desc">
+  <title id="title">LightGCN steps</title>
+  <desc id="desc">Step 0 is the user's own learned vector. Step 1 mixes the vectors of the films they liked. Step 2 mixes the vectors of the users who liked these films. The final vector of the user is the average of the three.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#183a32" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6b7c76"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="400" rx="24" fill="#eaf1ed"/>
+  <rect x="24" y="24" width="1052" height="352" rx="20" fill="#ffffff" filter="url(#shadow)"/>
+  <g font-family="Avenir Next, Trebuchet MS, sans-serif">
+    <text x="58" y="68" fill="#173b36" font-size="23" font-weight="700">The vectors walk the graph, step by step</text>
+    <text x="58" y="92" fill="#6b7c76" font-size="13">The final vector of a user is the average of their vectors at each step</text>
+
+    <!-- step 0 -->
+    <rect x="58" y="125" width="220" height="150" rx="12" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="168" y="157" fill="#173b36" font-size="18" font-weight="700" text-anchor="middle">Step 0</text>
+    <text x="168" y="180" fill="#6b7c76" font-size="14" text-anchor="middle">your own vector</text>
+    <g stroke="#ffffff" stroke-width="2">
+      <rect x="98" y="205" width="35" height="35" fill="#357b6c"/>
+      <rect x="133" y="205" width="35" height="35" fill="#d8eeee"/>
+      <rect x="168" y="205" width="35" height="35" fill="#167768"/>
+      <rect x="203" y="205" width="35" height="35" fill="#e2f4ee"/>
+    </g>
+
+    <path d="M 286 200 H 322" stroke="#6b7c76" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- step 1 -->
+    <rect x="330" y="125" width="220" height="150" rx="12" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="440" y="157" fill="#173b36" font-size="18" font-weight="700" text-anchor="middle">Step 1</text>
+    <text x="440" y="180" fill="#6b7c76" font-size="14" text-anchor="middle">the films you liked</text>
+    <g stroke="#ffffff" stroke-width="2">
+      <rect x="370" y="205" width="35" height="35" fill="#e2f4ee"/>
+      <rect x="405" y="205" width="35" height="35" fill="#357b6c"/>
+      <rect x="440" y="205" width="35" height="35" fill="#167768"/>
+      <rect x="475" y="205" width="35" height="35" fill="#d8eeee"/>
+    </g>
+
+    <path d="M 558 200 H 594" stroke="#6b7c76" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- step 2 -->
+    <rect x="602" y="125" width="220" height="150" rx="12" fill="#f8faf8" stroke="#dce6e1"/>
+    <text x="712" y="157" fill="#173b36" font-size="18" font-weight="700" text-anchor="middle">Step 2</text>
+    <text x="712" y="180" fill="#6b7c76" font-size="14" text-anchor="middle">the users who liked them</text>
+    <g stroke="#ffffff" stroke-width="2">
+      <rect x="642" y="205" width="35" height="35" fill="#357b6c"/>
+      <rect x="677" y="205" width="35" height="35" fill="#357b6c"/>
+      <rect x="712" y="205" width="35" height="35" fill="#d8eeee"/>
+      <rect x="747" y="205" width="35" height="35" fill="#e2f4ee"/>
+    </g>
+
+    <!-- average -->
+    <path d="M 168 275 V 320 H 900" fill="none" stroke="#6b7c76" stroke-width="2"/>
+    <path d="M 440 275 V 320" stroke="#6b7c76" stroke-width="2"/>
+    <path d="M 712 275 V 320" stroke="#6b7c76" stroke-width="2"/>
+    <path d="M 900 320 H 944 V 285" fill="none" stroke="#6b7c76" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="560" y="345" fill="#6b7c76" font-size="14" text-anchor="middle">average of the three</text>
+
+    <rect x="854" y="125" width="184" height="150" rx="12" fill="#e2f4ee" stroke="#357b6c"/>
+    <text x="946" y="157" fill="#167768" font-size="18" font-weight="700" text-anchor="middle">Final vector</text>
+    <text x="946" y="180" fill="#6b7c76" font-size="14" text-anchor="middle">used for the score</text>
+    <g stroke="#ffffff" stroke-width="2">
+      <rect x="876" y="205" width="35" height="35" fill="#357b6c"/>
+      <rect x="911" y="205" width="35" height="35" fill="#357b6c"/>
+      <rect x="946" y="205" width="35" height="35" fill="#167768"/>
+      <rect x="981" y="205" width="35" height="35" fill="#d8eeee"/>
+    </g>
+  </g>
+</svg>
