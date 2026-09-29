@@ -3,6 +3,7 @@ name = "recommendationsystems"
 version = "0.1.0"
 description = "Beginner-friendly guides to standard recommendation systems"
 readme = "README.md"
+license = "MIT"
 authors = [
     { name = "FelicienC", email = "cantalloubef@gmail.com" }
 ]
