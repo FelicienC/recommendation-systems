@@ -61,10 +61,20 @@ Now for the tour. As we move through the repository, we give the system more inf
 
 1. **[Contextual bandits](./src/recommendationsystems/01_bandits)**: We start with the cold-start problem. A bandit has to decide what to show while balancing **exploration** of new options with **exploitation** of what already works.
 2. **[Content-based recommendations](./src/recommendationsystems/02_content_based)**: Next, we use information about the items and the user. A film can be recommended because it shares characteristics with films the user already likes, even when interaction history is limited.
-3. **[Collaborative filtering](./src/recommendationsystems/03_collaborative_filtering)**: Once we have enough historical interactions, we can learn from collective behavior. Matrix factorization uncovers hidden relationships between users and items without needing detailed item descriptions.
+3. **[Collaborative filtering](./src/recommendationsystems/03_collaborative_filtering)**: Once we have enough historical interactions, we can learn from collective behavior. Users with similar tastes, and films liked by the same people, point to good recommendations without needing any item description.
 4. **[Two-tower models](./src/recommendationsystems/04_two_towers)**: As the number of users and items grows, we need representations that can be compared efficiently. Two-tower models learn user and item embeddings separately, which makes large-scale candidate retrieval possible.
 5. **[SASRec](./src/recommendationsystems/05_sasrec)**: User behavior also has an order. Self-attentive sequential recommendation uses a user's recent history to understand what they may want next.
 6. **[LightGCN](./src/recommendationsystems/06_lightgcn)**: Users and items can be viewed as a graph connected by interactions. Graph neural networks use those connections to capture relationships that may be missed when we look at each interaction separately.
 7. **[Retrieval and ranking](./src/recommendationsystems/07_retrieval_ranking)**: Finally, we bring everything together in a production pipeline. Retrieval finds a small set of promising candidates, and ranking orders them for the user.
 
 The order is intentional. We begin with the simplest setting, add richer sources of information, and finish with an architecture that can serve recommendations efficiently in practice.
+
+## TODO: other techniques to cover
+
+- **Bandits**: UCB and Thompson sampling.
+- **Matrix factorization**: alternating least squares, and BPR for implicit feedback.
+- **Factorization machines** and deep ranking models (Wide & Deep, DeepFM, DLRM).
+- **Approximate nearest neighbor search** (HNSW, FAISS) to serve embeddings at scale.
+- **Offline evaluation**: precision, recall, NDCG, and data leakage pitfalls.
+- **Re-ranking**: diversity, novelty, and business rules.
+- **Generative recommenders**: semantic IDs and LLM-based recommendations.
