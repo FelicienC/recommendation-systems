@@ -1,4 +1,5 @@
-site_name: Recommendation Systems
+site_name: Recommendation Systems Explained
+site_url: https://felicienc.github.io/recommendation-systems/
 site_description: Beginner-friendly guides to standard recommendation systems
 
 docs_dir: src/recommendationsystems
@@ -8,7 +9,7 @@ exclude_docs: |
   __pycache__/
 
 nav:
-  - index.md
+  - Home: index.md
   - 01 Contextual bandits: 01_bandits/01_bandits.ipynb
   - 02 Content-based recommendations: 02_content_based/02_content_based.ipynb
   - 03 Collaborative filtering: 03_collaborative_filtering/03_collaborative_filtering.ipynb
@@ -17,8 +18,32 @@ nav:
   - "06 LightGCN: recommendations through a graph": 06_lightgcn/06_lightgcn.ipynb
   - 07 Retrieval and ranking: 07_retrieval_ranking/07_retrieval_ranking.ipynb
 
+repo_url: https://github.com/FelicienC/recommendation-systems
+repo_name: FelicienC/recommendation-systems
+
 theme:
-  name: readthedocs
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - content.code.copy
+    - navigation.footer
+    - navigation.top
+    - search.highlight
+    - toc.follow
 
 plugins:
   - search
