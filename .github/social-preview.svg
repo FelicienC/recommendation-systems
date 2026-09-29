@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640" font-family="Avenir Next, Trebuchet MS, sans-serif">
+  <rect width="1280" height="640" fill="#eaf1ed"/>
+  <rect x="40" y="40" width="1200" height="560" rx="28" fill="#f8faf8" stroke="#dce6e1" stroke-width="2"/>
+
+  <text x="100" y="150" font-size="22" font-weight="700" letter-spacing="3" fill="#167768">7 CHAPTERS · PYTHON NOTEBOOKS</text>
+  <text x="100" y="240" font-size="68" font-weight="700" fill="#173b36">Recommendation</text>
+  <text x="100" y="318" font-size="68" font-weight="700" fill="#173b36">Systems Explained</text>
+  <text x="100" y="385" font-size="28" fill="#6b7c76">From bandits to production,</text>
+  <text x="100" y="423" font-size="28" fill="#6b7c76">one small simulation at a time.</text>
+  <rect x="100" y="480" width="470" height="56" rx="28" fill="#167768"/>
+  <text x="335" y="516" font-size="22" font-weight="600" fill="#ffffff" text-anchor="middle">felicienc.github.io/recommendation-systems</text>
+
+  <path d="M830 110 V530" stroke="#dce6e1" stroke-width="6" stroke-linecap="round"/>
+  <g font-size="22" font-weight="600" fill="#173b36">
+    <circle cx="830" cy="110" r="22" fill="#e76f51"/><text x="830" y="118" fill="#fff" text-anchor="middle">1</text><text x="870" y="118">Contextual bandits</text>
+    <circle cx="830" cy="180" r="22" fill="#f0bd54"/><text x="830" y="188" fill="#173b36" text-anchor="middle">2</text><text x="870" y="188">Content-based</text>
+    <circle cx="830" cy="250" r="22" fill="#357b6c"/><text x="830" y="258" fill="#fff" text-anchor="middle">3</text><text x="870" y="258">Collaborative filtering</text>
+    <circle cx="830" cy="320" r="22" fill="#357b6c"/><text x="830" y="328" fill="#fff" text-anchor="middle">4</text><text x="870" y="328">Two towers</text>
+    <circle cx="830" cy="390" r="22" fill="#357b6c"/><text x="830" y="398" fill="#fff" text-anchor="middle">5</text><text x="870" y="398">SASRec</text>
+    <circle cx="830" cy="460" r="22" fill="#357b6c"/><text x="830" y="468" fill="#fff" text-anchor="middle">6</text><text x="870" y="468">LightGCN</text>
+    <circle cx="830" cy="530" r="22" fill="#173b36"/><text x="830" y="538" fill="#fff" text-anchor="middle">7</text><text x="870" y="538">Retrieval and ranking</text>
+  </g>
+</svg>
