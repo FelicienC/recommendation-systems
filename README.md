@@ -1,6 +1,4 @@
-# Recommendation Systems Explained
-
-**Learn recommender systems from bandits to production, one small simulation at a time.**
+# Recommendation Systems
 
 [![Notebooks](https://github.com/FelicienC/recommendation-systems/actions/workflows/notebooks.yml/badge.svg)](https://github.com/FelicienC/recommendation-systems/actions/workflows/notebooks.yml)
 [![Docs](https://github.com/FelicienC/recommendation-systems/actions/workflows/docs.yml/badge.svg)](https://felicienc.github.io/recommendation-systems/)
@@ -9,9 +7,10 @@
 [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
-Recommendation systems are behind many of the things we use every day. Here, we build small Python simulations to understand how they work, one idea at a time. No black box and no magic: just data, intuition, and a bit of code 😄.
+Recommendation systems are behind many of the things we use every day. This repo builds small Python simulations to understand how they work, one idea at a time. [📖 Read it online](https://felicienc.github.io/recommendation-systems/)
 
-### [📖 Read it online](https://felicienc.github.io/recommendation-systems/)
+No black box and no magic: just data, intuition, and a bit of code 😄.
+
 
 ## The chapters
 
