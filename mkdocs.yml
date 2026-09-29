@@ -10,6 +10,7 @@ exclude_docs: |
 
 nav:
   - Home: index.md
+  - 00 Introduction: introduction.md
   - 01 Contextual bandits: 01_bandits/01_bandits.ipynb
   - 02 Content-based recommendations: 02_content_based/02_content_based.ipynb
   - 03 Collaborative filtering: 03_collaborative_filtering/03_collaborative_filtering.ipynb

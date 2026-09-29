@@ -1,77 +1,37 @@
 # Recommendation Systems Explained
 
-Recommendation systems are behind many of the things we use every day. In this repository, we build small Python simulations to understand how they work, one idea at a time. No black box and no magic: just data, intuition, and a bit of code :)
+**Learn recommender systems from bandits to production, one small simulation at a time.**
 
-Read it online: https://felicienc.github.io/recommendation-systems/
+[![Notebooks](https://github.com/FelicienC/recommendation-systems/actions/workflows/notebooks.yml/badge.svg)](https://github.com/FelicienC/recommendation-systems/actions/workflows/notebooks.yml)
+[![Docs](https://github.com/FelicienC/recommendation-systems/actions/workflows/docs.yml/badge.svg)](https://felicienc.github.io/recommendation-systems/)
+[![License: MIT](https://img.shields.io/github/license/FelicienC/recommendation-systems)](https://github.com/FelicienC/recommendation-systems/blob/main/LICENSE)
+![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)
+[![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
-Or run the notebooks locally: install [uv](https://docs.astral.sh/uv/), run `make init`, then open any notebook with the `.venv` kernel (VS Code works out of the box).
+Recommendation systems are behind many of the things we use every day. Here, we build small Python simulations to understand how they work, one idea at a time. No black box and no magic: just data, intuition, and a bit of code 😄.
 
-## Introduction
+### [📖 Read it online](https://felicienc.github.io/recommendation-systems/)
 
-### What is a recommendation system?
+## The chapters
 
-You open Netflix and see a list of films you might enjoy. You start Spotify and find a playlist that seems to know you. You visit Amazon and discover a product you were apparently about to buy.
+New to recommendation systems? Start with the [introduction](./src/recommendationsystems/introduction.md): what they are, how they work, and how recommendation differs from ranking.
 
-Behind these suggestions is a recommendation system.
+Each chapter adds one new idea or tackles one new scaling challenge. We begin with the simplest setting, add richer sources of information, and finish with an architecture that serves recommendations in practice.
 
-Its job can be summed up with one simple question:
+| | Chapter | What you learn |
+|:-:|---|---|
+| <img src="./src/recommendationsystems/01_bandits/images/platform_catalog.svg" width="260" alt="Contextual bandits"> | **01**<br>[Contextual bandits](https://felicienc.github.io/recommendation-systems/01_bandits/01_bandits.html) | Cold start: recommend with no history, balancing **exploration** and **exploitation**. |
+| <img src="./src/recommendationsystems/02_content_based/images/cosine_similarity.svg" width="260" alt="Content-based"> | **02**<br>[Content-based](https://felicienc.github.io/recommendation-systems/02_content_based/02_content_based.html) | Recommend films that look like the ones you already like. |
+| <img src="./src/recommendationsystems/03_collaborative_filtering/images/films_liked_together.svg" width="260" alt="Collaborative filtering"> | **03**<br>[Collaborative filtering](https://felicienc.github.io/recommendation-systems/03_collaborative_filtering/03_collaborative_filtering.html) | Learn from collective behavior: people like you, films liked together. |
+| <img src="./src/recommendationsystems/04_two_towers/images/two_towers.svg" width="260" alt="Two towers"> | **04**<br>[Two towers](https://felicienc.github.io/recommendation-systems/04_two_towers/04_two_towers.html) | One vector per user, one per film: retrieval at scale, even for newcomers. |
+| <img src="./src/recommendationsystems/05_sasrec/images/attention.svg" width="260" alt="SASRec"> | **05**<br>[SASRec](https://felicienc.github.io/recommendation-systems/05_sasrec/05_sasrec.html) | Order matters: self-attention reads your history to guess what comes next. |
+| <img src="./src/recommendationsystems/06_lightgcn/images/likes_graph_network.svg" width="260" alt="LightGCN"> | **06**<br>[LightGCN](https://felicienc.github.io/recommendation-systems/06_lightgcn/06_lightgcn.html) | Users and films as a graph: vectors that walk along the likes. |
+| <img src="./src/recommendationsystems/07_retrieval_ranking/images/funnel.svg" width="260" alt="Retrieval and ranking"> | **07**<br>[Retrieval and ranking](https://felicienc.github.io/recommendation-systems/07_retrieval_ranking/07_retrieval_ranking.html) | The production pipeline: cast a wide net, then sort the catch. |
 
-> Given a user and a collection of items, which items should we show this user?
+## Run it locally
 
-An item can be almost anything: a film, a song, a product, an article, a video, or even another user to follow. The system looks at what it knows about the user, the items, and their past interactions, then uses that information to make better suggestions.
-
-Here are a few examples we meet every day:
-
-- Netflix recommends films and series.
-- Spotify recommends songs, albums, and playlists.
-- Amazon recommends products.
-- YouTube recommends videos.
-- A news application recommends articles.
-
-The objective can change from one platform to another. Maybe we want to help users discover something relevant, increase purchases, keep them coming back, or simply make the service easier to use.
-
-### How does it work?
-
-There is no single algorithm that works perfectly everywhere. Before choosing one, we need to understand the problem we are trying to solve:
-
-- Do we know anything about the user, or do we only have an anonymous user ID?
-- Do we know anything about the items, such as their category, author, or description?
-- Do we have a history of clicks, views, ratings, or purchases?
-- How many items are available?
-- How quickly do we need to produce the recommendations?
-
-For example, recommending a film to a new user is very different from recommending one to someone who has already watched hundreds of films. In the first case, we have very little information to work with. This is called **cold start**. The system has to make a good guess with almost no clues. Not the easiest place to start :)
-
-This repository explores several ways to deal with these situations. We begin with simple simulations, then gradually move towards methods that are used in real production systems.
-
-### What is the difference between recommendation and ranking?
-
-These ideas are closely related, but they do not do exactly the same job.
-
-A **ranking system** receives a known list of items and puts them in the most useful order. For example, a search engine may receive one thousand matching pages and rank them from the most relevant to the least relevant.
-
-A **recommendation system** often has one extra job: deciding which items are worth considering in the first place. A large platform may have millions of items, so it first retrieves a smaller group of possible recommendations and then ranks them.
-
-Think of it as a two-step process:
-
-1. **Retrieval** finds a manageable set of possible items.
-2. **Ranking** orders those items for the user.
-
-The last chapter of this repository brings both steps together in a typical production pipeline.
-
-## A progressive tour of recommendation systems
-
-Now for the tour. As we move through the repository, we give the system more information and better ways to represent users, items, and their interactions. Each chapter adds one new idea or tackles one new scaling challenge.
-
-1. **[Contextual bandits](./src/recommendationsystems/01_bandits)**: We start with the cold-start problem. A bandit has to decide what to show while balancing **exploration** of new options with **exploitation** of what already works.
-2. **[Content-based recommendations](./src/recommendationsystems/02_content_based)**: Next, we use information about the items and the user. A film can be recommended because it shares characteristics with films the user already likes, even when interaction history is limited.
-3. **[Collaborative filtering](./src/recommendationsystems/03_collaborative_filtering)**: Once we have enough historical interactions, we can learn from collective behavior. Users with similar tastes, and films liked by the same people, point to good recommendations without needing any item description.
-4. **[Two-tower models](./src/recommendationsystems/04_two_towers)**: As the number of users and items grows, we need representations that can be compared efficiently. Two-tower models learn user and item embeddings separately, which makes large-scale candidate retrieval possible.
-5. **[SASRec](./src/recommendationsystems/05_sasrec)**: User behavior also has an order. Self-attentive sequential recommendation uses a user's recent history to understand what they may want next.
-6. **[LightGCN](./src/recommendationsystems/06_lightgcn)**: Users and items can be viewed as a graph connected by interactions. Graph neural networks use those connections to capture relationships that may be missed when we look at each interaction separately.
-7. **[Retrieval and ranking](./src/recommendationsystems/07_retrieval_ranking)**: Finally, we bring everything together in a production pipeline. Retrieval finds a small set of promising candidates, and ranking orders them for the user.
-
-The order is intentional. We begin with the simplest setting, add richer sources of information, and finish with an architecture that can serve recommendations efficiently in practice.
+Install [uv](https://docs.astral.sh/uv/), run `make init`, then open any notebook with the `.venv` kernel (VS Code works out of the box).
 
 ## TODO: other techniques to cover
 
